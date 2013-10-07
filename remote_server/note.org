@@ -1,0 +1,659 @@
+#+TITLE:     Linux gosap 嵌入式开发相关
+#+AUTHOR:    lijunpeng
+#+EMAIL:     junstrix@gmail.com
+#+DATE:      2013-08-31 Sat
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+
+* 串口编程
+  查看帮助
+
+  1). man termios
+
+  2). Serial Programming HOWTO
+
+  3). Serial Programming Guide for POSIX Operating Systems
+#+begin_src c
+int openSerialPort(char *devName)
+{
+	int fd;
+	if((fd = open(devName, O_RDWR | O_NOCTTY)) < 0){
+                perror("open");
+                exit(1);
+        }
+	struct termios serialAttr;//声明一个串口结构体
+	memset(&serialAttr, 0, sizeof(serialAttr));//初始化serialAttr,相当于bzero();
+	serialAttr.c_oflag = 0; // 输出模式
+	serialAttr.c_iflag = IGNPAR;
+	serialAttr.c_cflag = B9600 | HUPCL | CS8 | CREAD | CLOCAL;
+	serialAttr.c_lflag = 0; //non-canonical 非标准模式  man 3 termios  在300行里可以查看更详细
+	serialAttr.c_cc[VMIN] = 0;
+	serialAttr.c_cc[VTIME] = 10; // used inter-character timer  VTIME*0.1s  读取一个字符超时返回0
+	if (tcsetattr(fd, TCSANOW, &serialAttr) != 0) {
+		perror("tcsetattr");
+                exit(1);
+	}
+	return fd;
+}
+#+end_src 
+打开串口设备之后就可以进行读和写，其中串口编程中注意read的操作，这里由于下位机可能不能及时发送数据上来，进入到默认的阻塞状态，
+而使系统处于无响应状态。这时候可以在打开串口时设置成非阻塞打开，或设置串口 lflag 成非标准的模式(noncanonical mode)
+
+例如串口属性设置成以下所示,如果在读一个字符1秒后超时返回0,可防止进入阻塞状态,具体可查看man 3 termios 和 Serial Programming HOWTO
+#+begin_src c
+        serialAttr.c_lflag = 0; //non-canonical 非标准模式  man 3 termios  在300行里可以查看更详细                                    
+        serialAttr.c_cc[VMIN] = 0;                                                                                                    
+        serialAttr.c_cc[VTIME] = 10; // used inter-character timer  VTIME*0.1s  读取一个字符超时返回0                                 
+#+end_src
+
+* gosp 相关开发
+** 服务端的实现和部署
+   - 安装
+
+     到官网下载到最亲的gsoap版本,查看INSTALL.txt进行安装即可。简单的安装:
+
+   #+begin_src sh
+$ ./configure
+$ make
+$ make install exec_prefix=$HOME
+   #+end_src
+
+   - 编写接口
+#+begin_src c
+//gsoap ns service name: ns
+//gsoap ns service protocol: SOAP1.1
+//gsoap ns service style: rpc
+//gsoap ns service encoding: encoded
+//gsoap ns service namespace:	http://localhost:8888
+//gsoap ns service location:	http://localhost:8888
+//gsoap ns service port:	http://localhost:8888
+
+int ns__ledControl(int led_id, int led_stat, int *result); // Control LPC11C15 led throught uart
+int ns__motorControl(int motor_id, int motor_op, int *result); // Control motor
+int ns__spiReadId(int *result); // read spi id value
+int ns__lm75ReadTemp(int *result); // read lm75 temperature
+int ns__adcReadValue(int *result); // read adc value
+#+end_src
+   - 实现服务端接口
+#+begin_src sh
+soapcpp2 -c xxx.h
+
+#+end_src
+以上命令生成相关的头文件,就可以include包含到项目中编程。
+#+begin_src c
+#include "soapH.h"
+#include "ns.nsmap"
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <sys/ioctl.h>
+#include <fcntl.h>
+#include <linux/fs.h>
+#include <errno.h>
+#include <string.h>
+#include <termios.h>
+#include <signal.h>
+#include <pthread.h>
+#include <time.h>
+#include <sys/time.h>
+#include <signal.h>
+
+#define handle_error(msg)\
+	do {perror(msg); exit(EXIT_FAILURE);} while(0)
+#define RECBUFSIZE 20
+#define STARTTIMER 1
+#define STOPTIMER 0
+#define TRUE 1
+#define FALSE 0
+
+#define BACKLOG (100)	// Max. request backlog
+#define MAX_THR (10)	// Max. threads to serve requests
+int uart_fd = 0;
+int overtime_flag = FALSE;
+int control_flag = FALSE;
+int read_flag = FALSE;
+int receive_flag = FALSE;
+int receive_len = 0;
+char rec_data[RECBUFSIZE];
+
+int http_get(struct soap * soap);
+int openSerialPort(char *devName);
+int openSerialPort(char *devName)
+{
+	int fd;
+	fd = open(devName, O_RDWR | O_NOCTTY);
+	if (fd < 0) {
+		handle_error("open");
+	}
+	struct termios serialAttr;//声明一个串口结构体
+	memset(&serialAttr, 0, sizeof(serialAttr));//初始化serialAttr,相当于bzero();
+	serialAttr.c_oflag = 0;
+	serialAttr.c_iflag = IGNPAR;
+	serialAttr.c_cflag = B9600 | HUPCL | CS8 | CREAD | CLOCAL;
+	serialAttr.c_lflag = 0; //non-canonical
+	serialAttr.c_cc[VMIN] = 0;
+	serialAttr.c_cc[VTIME] = 10; // used inter-character timer  VTIME*0.1s
+	if (tcsetattr(fd, TCSANOW, &serialAttr) != 0) {
+		handle_error("tcsetattr");
+	}
+	return fd;
+}
+
+
+char *LedSendBufOn = NULL;
+char *LedSendBufOff = NULL;
+char *SendBuf=NULL;
+int ns__ledControl(struct soap *soap, int led_id, int led_stat, int *result)
+{
+	switch (led_id) { // which led will be control
+		case 1 :
+			LedSendBufOn = "SL10000#\0";
+			LedSendBufOff = "SL11000#\0";
+			break; //此处省略若干行
+		default : break;
+	}
+	if (led_stat == 1)
+	{
+		printf("The %d led will be Turn on.\n", led_id);
+		SendBuf = LedSendBufOn;
+	}
+	else {
+		printf("The %d led will be Turn off.\n", led_id);
+		SendBuf = LedSendBufOff;
+	}
+	printf("write to uart complete  size = %d\n", write(uart_fd, SendBuf, 8));
+	if(!receive_flag) {
+		memset(rec_data, 0, strlen(rec_data));
+	}
+	while(!control_flag) { // receive_data //下位机发送上来的数据
+		char *temp;
+		if ((read(uart_fd, temp, 1)) == 0) { // 默认阻塞方式 ， 在非标准模式下读字符超时就返回0, VTIME*0.1s,
+			printf("Time over\n");
+			overtime_flag = TRUE;
+			break;
+		}
+		if((*temp == 'S') && !receive_flag) {
+			receive_flag = TRUE;
+		}
+		if(receive_flag) {
+			rec_data[receive_len++] = *temp;
+			if((*temp == '#') && (receive_len > 1)) {
+				receive_flag = FALSE;
+				if(receive_len == 8) {
+					control_flag = TRUE;
+				}
+			}
+		}
+	}
+	if (overtime_flag)
+	{
+		*result = -1;
+		overtime_flag = FALSE;
+	}
+	else {
+		*result = (char)rec_data[2]-48; // return back
+	}
+	receive_len = 0;
+	control_flag = FALSE;
+	return 0;
+}
+
+int main(int argc, char **argv)
+{
+	int master_socket,slave_socket;
+	struct soap soap;
+	int i;
+	struct soap *soap_thr[MAX_THR]; // each thread needs a runtime context
+	pthread_t tid[MAX_THR];
+	if (argc < 3) {
+		fprintf(stderr, "usage: %s <devices> <server_port> \n", argv[0]);
+		exit(EXIT_FAILURE);
+	}
+  	if((uart_fd = openSerialPort(argv[1]))<0) { /*打开串口*/
+		handle_error("openSerialPort");
+  	}
+	soap_init(&soap); //初始化soap
+	soap.fget = http_get;
+	master_socket = soap_bind(&soap, NULL, atoi(argv[2]), BACKLOG);
+	if (!soap_valid_socket(master_socket))
+		exit(1);
+	fprintf(stderr, "Socket connection successful %d\n", master_socket);
+	for (i = 0; i < MAX_THR; i++)
+		soap_thr[i] = NULL;
+	while(1) {
+		for ( i = 0; i < MAX_THR; i++)
+		{
+			slave_socket = soap_accept(&soap);
+			if (!soap_valid_socket(slave_socket))
+			{
+				if (soap.errnum)
+				{
+					soap_print_fault(&soap,stderr);
+					continue; // retry
+				}
+				else {
+					fprintf(stderr,"Server timed out\n");
+					break;
+				}
+			}
+			fprintf(stderr, "Thread %d accepts socket %d connection from IP %d.%d.%d.%d\n", \
+                                i, slave_socket, (soap.ip >> 24)&0xFF, (soap.ip >> 16)&0xFF, (soap.ip >> 8)&0xFF, soap.ip&0xFF);
+			if (!soap_thr[i]) // first time around
+			{
+				soap_thr[i] = soap_copy(&soap);
+				if (!soap_thr[i])
+					exit(1); // could not allocate
+			}
+			else// recycle soap context
+			{
+				pthread_join(tid[i], NULL);
+				fprintf(stderr, "Thread %d completed\n", i);
+				soap_destroy(soap_thr[i]); // deallocate C++ data of old thread
+				soap_end(soap_thr[i]); // deallocate data of old thread
+			}
+			soap_thr[i]->socket = slave_socket; // new socket fd
+			pthread_create(&tid[i], NULL, (void*(*)(void*))soap_serve, (void*)soap_thr[i]);
+		}
+	}
+	for (i = 0; i < MAX_THR; i++)
+		if (soap_thr[i])
+		{
+			soap_done(soap_thr[i]); // detach context
+			free(soap_thr[i]); // free up
+		}
+	close(uart_fd);
+	return 0;
+}
+
+int http_get(struct soap * soap)
+{
+	FILE *fd = NULL;
+	char *s = strchr(soap->path, '?');
+	if (!s || strcmp(s, "?wsdl"))
+		return SOAP_GET_METHOD;
+	fd = fopen("ns.wsdl", "rb");
+	if (!fd)
+		return 404;
+	soap->http_content = "text/xml";
+	soap_response(soap, SOAP_FILE);
+	for (;;)
+	{
+		size_t r = fread(soap->tmpbuf, 1, sizeof(soap->tmpbuf), fd);
+		if (!r)
+			break;
+		if (soap_send_raw(soap, soap->tmpbuf, r))
+			break;
+	}
+	fclose(fd);
+	soap_end_send(soap);
+	return SOAP_OK;
+}
+#+end_src
+   - Makefile
+编写好服务端程序，可以利用以下Makefile模版编译程序，如服务端部署在嵌入式的板子中，选择相应的编译工具即可。
+
+在编译之前还要在gsoap源码中复制 stdsoap2.c  stdsoap2.h 两个文件到当前编译项目中，才能成功编译通过。
+#+begin_src makefile
+#this is a Makefile to build client and server
+OBJ_NAME := xxx
+# gsoap source path 
+GSOAP_ROOT := /pathto/build_src/gsoap-2.8/gsoap
+INCLUDE := -I$(GSOAP_ROOT)
+CC := gcc
+GCC := gcc
+#CC := arm-linux-gcc
+#GCC := arm-linux-gcc
+OBJ_SERVER := soapC.o stdsoap2.o soapServer.o $(OBJ_NAME)Server.o
+OBJ_CLIENT := soapC.o stdsoap2.o soapClient.o $(OBJ_NAME)Client.o
+all:server
+server: $(OBJ_SERVER)
+	$(CC) $(INCLUDE) -lpthread $^ -o $@
+client: $(OBJ_CLIENT)
+	$(CC) $(INCLUDE) $^ -o $@
+read  : $(OBJ_READ)
+	$(CC) $(INCLUDE) $^ -o $@
+soap:
+	soapcpp2 -c $(OBJ_NAME).h
+.PHONY:clean
+clean:
+	rm -f server client *.o
+distclean:
+	rm -f server client *.o ns* soap* *.xml *.nsmap
+#+end_src
+在复制 stdsoap2.c  stdsoap2.h 这两个文件到当前项目中，就可以执行make 生成服务端的程序了
+
+gsoap 的soapcpp2 可以根据接口定义的头文件xxx.h生成相应的客户端调用的实现。下面分别是C/C++
+和python客户端实现，其中python是例子是利用wsdl文件，再使用suds的python第三方库来实现调用程序。
+
+-  使用python验证向外提供的wsdl服务
+
+其中wsdl可以使用webserver提供给公众服务，并可以结合UDDI (mark!)
+
+#+begin_src python
+from suds.client import Client
+url = 'http://localhost:8888?wsdl'
+client = Client(url)
+print client
+print client.service.lm75ReadTemp()  #利用向外提供的wsdl文件，客户端调用服务端提供的方法
+#+end_src
+** c 客户端的实现
+#+begin_src sh
+soapcpp2 -C -c xxx.h
+#+end_src
+以上命令生成客户端相关的代码, -c 指生成c语言源码, -C指生成客户代码
+#+begin_src c
+#include "soapStub.h"
+#include "ns.nsmap" 
+#include <stdio.h> 
+#include <stdlib.h> 
+#include <string.h> 
+
+int main(int argc, char **argv) 
+{ 
+	int led_id = atoi(argv[2]); 
+	int led_stat = atoi(argv[3]);
+	char server[128] = {0}; 
+	if (argc < 4) { 
+		printf("usage: %s <ip:port> led_id led_stat \n", argv[0]); 
+		exit(1); 
+	} 
+	strcpy(server,argv[1]); 
+	printf("%d\t %d\n", led_id, led_stat);
+	struct soap add_soap; 
+	int result = 0; 
+	soap_init(&add_soap); 
+	soap_set_namespaces(&add_soap, namespaces); 
+	soap_call_ns__ledControl(&add_soap,server,NULL,led_id,led_stat,&result);
+	if (add_soap.error)   
+	{ 
+		printf("soap  error:  %d,  %s,  %s\n",  add_soap.error, 
+				*soap_faultcode(&add_soap), *soap_faultstring(&add_soap)); 
+		result = add_soap.error; 
+	} 
+	printf("led id: %d, status: %d\t result:%d\n", led_id, led_stat,led_result);
+	soap_end(&add_soap); 
+	soap_done(&add_soap); 
+	return 0; 
+} 
+#+end_src
+以上C语言编写的客户端,使用前面的Makefile执行make client就可以编译客户端
+** c++ 客户端的实现
+#+begin_src sh
+soapcpp2 -C -i xxx.h
+#+end_src
+以上命令生成C++客户端相关的代码, -i 指生成c++语言源码, -C指生成客户代码
+#+begin_src c
+#include "soapProxy.h"
+#include "ns.nsmap"
+
+const char server[] = "localhost:8888";
+
+int main(int argc, char **argv)
+{ 
+	Proxy client;
+	client.soap_endpoint = server;
+	client.ledControl(1,1,&result);
+	if (client.error)
+		client.soap_stream_fault(std::cerr);
+	else
+		printf("result = %d\n", result);
+	return 0;
+}
+#+end_src
+以上是C++语言编写的客户端，查看前面Makefile编译c++客户端即可。
+
+- qt图形客户端
+从上面一个简单的C++客户端的依赖文件，移植到Qt里可以利用C++语言编写图形客户端控制
+
+下面是一个qt 项目配置文件 
+#+begin_src makefile
+#-------------------------------------------------
+#
+# Project created by QtCreator 2013-08-27T16:32:38
+#
+#-------------------------------------------------
+
+QT       += core gui
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
+TARGET = qt
+TEMPLATE = app
+
+SOURCES += main.cpp\
+        widget.cpp \
+    stdsoap2.cpp \
+    soapProxy.cpp \
+    soapC.cpp
+
+HEADERS  += widget.h \
+    ns.nsmap \
+    stdsoap2.h \
+    soapStub.h \
+    soapProxy.h \
+    soapH.h
+
+FORMS    += widget.ui
+#+end_src
+从上而的qt项目配置文件中可以看到,移植到qt里只需复制并把 stdsoap2.cpp soapProxy.cpp soapC.app ns.namap stdsoap2.h soapStub.h 
+soapProxy.h soapH.h 加入到qt的项目中去就可以调用来编写图形客户端就可以了,下面是一个widget.cpp的简单的实现。
+
+#+begin_src cpp
+#include "widget.h"
+#include "ui_widget.h"
+#include "soapProxy.h"
+#include "ns.nsmap"
+
+Proxy client;  // create  object
+int result=0; // return back value
+int led_id=1; // led_id
+char serveripaddr[128]={0};
+Widget::Widget(QWidget *parent) :
+    QWidget(parent),
+    ui(new Ui::Widget)
+{
+    ui->setupUi(this);
+}
+
+Widget::~Widget()
+{
+    delete ui;
+}
+
+void Widget::on_ledOn_pushButton_clicked()
+{
+    client.soap_endpoint = serveripaddr;
+    client.ledControl(led_id,1,&result);
+}
+
+void Widget::on_ledOff_pushButton_clicked()
+{
+    client.soap_endpoint = serveripaddr;
+    client.ledControl(led_id,0,&result);
+}
+
+void Widget::on_led1_radioButton_clicked()
+{
+    led_id = 1;
+}
+
+void Widget::on_led2_radioButton_clicked()
+{
+    led_id = 2;
+}
+
+void Widget::on_server_pushButton_clicked()
+{
+    const char *tmp_str = ui->serveripaddr_lineEdit->text().toStdString().c_str();
+    strcpy(serveripaddr,tmp_str);
+   //serveripaddr = tmp_str;
+   ui->serveripaddr_lineEdit->setEnabled(false);
+   ui->server_pushButton->setText("Stop");
+}
+
+void Widget::on_quit_pushButton_clicked()
+{
+    close();
+}
+#+end_src
+** python 客户端的实现
+
+利用python第三方库提供的webservice可以很方便简单的实现webservice客户端的调用，下面以一个从互联网上获取wsdl webservice并实现
+查询手机号码的归属地,wsdl地址:http://webservice.webxml.com.cn/WebServices/MobileCodeWS.asmx?wsdl
+#+begin_src python
+from suds.client import Client
+url = 'http://webservice.webxml.com.cn/WebServices/MobileCodeWS.asmx?wsdl'
+client = Client(url)
+print client
+print client.service.getMobileCodeInfo(mobileCode="1557730xxxx")
+#+end_src
+从上面导入的类可以看出,这里python实现webservice需要suds第三方库，可以使用pip install suds进行安装再使用，之所记python客户端的实现
+是因为python简单有助于理解利用wsdl webservice提供的调用。
+* lpc1114下位机
+- main.c
+#+begin_src c
+#include "LPC11xx.h"
+#include "uart.h"
+#include "gpio.h"
+#include "timer32.h"
+#include "i2c.h"
+#include "w25x10.h"
+#include "adc.h"
+#include "lpc_control.h"
+#include "stepmotor.h"
+
+extern volatile uint32_t	UARTCount;
+extern volatile uint8_t         UARTBuffer[BUFSIZE];
+int main (void) 
+{
+	SystemInit();
+	init_timer32(0,0);
+	GPIOInit();
+	InitStep();
+	UARTInit(9600);
+	I2CInit( (uint32_t)I2CMASTER );
+	W25X10_Init();
+	ADCInit(ADC_CLK);
+	GPIOSetDir(PORT2,8,1);
+	GPIOSetDir(PORT2,9,1);
+	GPIOSetDir(PORT2,10,1);
+	GPIOSetDir(PORT2,11,1);
+	GPIOSetDir(PORT1,5,1);
+	GPIOSetDir(PORT1,8,1);
+	GPIOSetDir(PORT1,9,1);
+	GPIOSetDir(PORT1,11,1);
+	GPIOSetValue(PORT2,8,1); 
+	GPIOSetValue(PORT2,9,1); 
+	GPIOSetValue(PORT2,10,1);
+	GPIOSetValue(PORT2,11,1);
+	GPIOSetValue(PORT1,5,1);
+	GPIOSetValue(PORT1,8,1);
+	GPIOSetValue(PORT1,9,1);
+	GPIOSetValue(PORT1,11,1);
+	while (1)
+	{
+		delay32Ms(0,50); // !!!!!
+		wm_op();
+		if ( UARTCount != 0 )
+		{
+			LPC_UART->IER = IER_THRE | IER_RLS;          
+			UARTSend( (uint8_t *)UARTBuffer, UARTCount );
+			memset(UARTBuffer,0,UARTCount);
+			UARTCount = 0;
+			LPC_UART->IER = IER_THRE | IER_RLS | IER_RBR;
+		}
+	}
+}
+#+end_src
+- =lpc_control.c=
+#+begin_src c
+#include <stdlib.h>
+#include <string.h>
+#include "LPC11xx.h"
+#include "uart.h"
+#include "gpio.h"
+#include "timer32.h"
+#include "i2c.h"
+#include "w25x10.h"
+#include "ssp.h"
+#include "adc.h"
+#include "type.h"
+#include "stepmotor.h"
+#include "lpc_control.h"
+
+extern volatile uint32_t UARTCount;
+extern volatile uint8_t UARTBuffer[BUFSIZE];
+
+void wm_op()
+{
+	switch(UARTBuffer[1])
+	{
+		case 'A': // read adc value
+			read_adc();
+			break;	
+		case 'T': // read lm75 temperature
+			read_temp();
+			break;
+		case 'S': // read spi id value
+			read_spid();
+			break;
+		case 'L': // control led
+			con_led();
+			break;
+		case 'M': // control motor
+			con_motor();
+			break;
+		default:
+			break;
+	}
+}
+void con_led(void)
+{
+	int led_id = (char)UARTBuffer[2]-48;
+	int led_stat = (char)UARTBuffer[3]-48;
+	switch (led_id) {
+		case 1 : GPIOSetValue(PORT2,8,led_stat); break;	
+		case 2 : GPIOSetValue(PORT2,9,led_stat); break;	
+		case 3 : GPIOSetValue(PORT2,10,led_stat); break;	
+		case 4 : GPIOSetValue(PORT2,11,led_stat); break;	
+		case 5 : GPIOSetValue(PORT1,5,led_stat); break;	
+		case 6 : GPIOSetValue(PORT1,8,led_stat); break;	
+		case 7 : GPIOSetValue(PORT1,9,led_stat); break;	
+		case 8 : GPIOSetValue(PORT1,11,led_stat); break;
+		case 9 : GPIOSetValue(PORT2,8,led_stat); 
+			 GPIOSetValue(PORT2,9,led_stat); 
+			 GPIOSetValue(PORT2,10,led_stat);
+			 GPIOSetValue(PORT2,11,led_stat);
+			 GPIOSetValue(PORT1,5,led_stat); 
+			 GPIOSetValue(PORT1,8,led_stat); 
+			 GPIOSetValue(PORT1,9,led_stat); 
+			 GPIOSetValue(PORT1,11,led_stat);
+			 break;
+		default : break;
+	}
+}
+#+end_src
+- =lpc_control.h=
+#+begin_src c
+#ifndef __LPC_CONTROL__
+#define __LPC_CONTROL__
+extern void wm_op(void);
+extern void con_led(void);
+extern void read_adc(void);
+extern void read_temp(void);
+extern void read_spid(void);
+extern void con_motor(void);
+extern unsigned int motor_flags;
+#endif
+#+end_src

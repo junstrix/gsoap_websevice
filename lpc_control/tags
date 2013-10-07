@@ -1,0 +1,1238 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACR	.\Common\inc\LPC11xx.h	/^  __IO uint32_t  ACR;                   \/*!< Offset: 0x020 Auto-baud Control Register (R\/W) *\/$/;"	m	struct:__anon21
+ADCBurstRead	.\Common\src\adc.c	/^void ADCBurstRead( void )$/;"	f
+ADCInit	.\Common\src\adc.c	/^void ADCInit( uint32_t ADC_Clk )$/;"	f
+ADCIntDone	.\Common\src\adc.c	/^volatile uint32_t ADCIntDone = 0;$/;"	v
+ADCRead	.\Common\src\adc.c	/^uint32_t ADCRead( uint8_t channelNum )$/;"	f
+ADCValue	.\Common\src\adc.c	/^volatile uint32_t ADCValue[ADC_NUM];$/;"	v
+ADC_ADINT	.\Common\inc\adc.h	24;"	d
+ADC_CLK	.\Common\inc\adc.h	27;"	d
+ADC_DEBUG	.\Common\inc\adc.h	17;"	d
+ADC_DONE	.\Common\inc\adc.h	22;"	d
+ADC_INDEX	.\Common\inc\adc.h	20;"	d
+ADC_INTERRUPT_FLAG	.\Common\inc\adc.h	15;"	d
+ADC_IRQHandler	.\Common\src\adc.c	/^void ADC_IRQHandler (void) $/;"	f
+ADC_IRQHandler	.\Common\src\cstartup_M.s	/^ADC_IRQHandler:$/;"	l
+ADC_IRQn	.\Common\inc\LPC11xx.h	/^  ADC_IRQn                      = 24,       \/*!< A\/D Converter Interrupt                          *\/$/;"	e	enum:IRQn
+ADC_NUM	.\Common\inc\adc.h	26;"	d
+ADC_OFFSET	.\Common\inc\adc.h	19;"	d
+ADC_OVERRUN	.\Common\inc\adc.h	23;"	d
+ADC_PD	.\Common\inc\pmu.h	29;"	d
+ADR0	.\Common\inc\LPC11xx.h	/^  __IO uint32_t ADR0;                   \/*!< Offset: 0x00C I2C Slave Address Register 0 (R\/W) *\/$/;"	m	struct:__anon26
+ADR1	.\Common\inc\LPC11xx.h	/^  __IO uint32_t ADR1;                   \/*!< Offset: 0x020 I2C Slave Address Register 1 (R\/W) *\/$/;"	m	struct:__anon26
+ADR2	.\Common\inc\LPC11xx.h	/^  __IO uint32_t ADR2;                   \/*!< Offset: 0x024 I2C Slave Address Register 2 (R\/W) *\/$/;"	m	struct:__anon26
+ADR3	.\Common\inc\LPC11xx.h	/^  __IO uint32_t ADR3;                   \/*!< Offset: 0x028 I2C Slave Address Register 3 (R\/W) *\/$/;"	m	struct:__anon26
+ADRMATCH	.\Common\inc\LPC11xx.h	/^  __IO uint32_t  ADRMATCH;              \/*!< Offset: 0x050 RS-485\/EIA-485 address match Register (R\/W) *\/$/;"	m	struct:__anon21
+AIRCR	.\Common\inc\core_cm0.h	/^  __IO uint32_t AIRCR;                        \/*!< Application Interrupt \/ Reset Control Register           *\/$/;"	m	struct:__anon10
+ARB	.\Common\inc\can.h	132;"	d
+ARM_SWDIO_PIO1_3	.\Common\inc\LPC11xx.h	/^  __IO uint32_t ARM_SWDIO_PIO1_3;       \/*!< Offset: 0x090 I\/O configuration for pin SWDIO\/PIO1_3\/AD4\/CT32B1_MAT2 (R\/W) *\/$/;"	m	struct:__anon15
+BASIC_MODE	.\Common\inc\can.h	38;"	d
+BITRATE1000K24MHZ	.\Common\inc\can.h	98;"	d
+BITRATE1000K24MHZ	.\Common\inc\can_api.h	78;"	d
+BITRATE1000K8MHZ	.\Common\inc\can.h	87;"	d
+BITRATE1000K8MHZ	.\Common\inc\can_api.h	66;"	d
+BITRATE100K16MHZ	.\Common\inc\can.h	89;"	d
+BITRATE100K16MHZ	.\Common\inc\can_api.h	69;"	d
+BITRATE100K24MHZ	.\Common\inc\can.h	94;"	d
+BITRATE100K24MHZ	.\Common\inc\can_api.h	74;"	d
+BITRATE100K8MHZ	.\Common\inc\can.h	83;"	d
+BITRATE100K8MHZ	.\Common\inc\can_api.h	62;"	d
+BITRATE125K16MHZ	.\Common\inc\can.h	90;"	d
+BITRATE125K16MHZ	.\Common\inc\can_api.h	70;"	d
+BITRATE125K24MHZ	.\Common\inc\can.h	95;"	d
+BITRATE125K24MHZ	.\Common\inc\can_api.h	75;"	d
+BITRATE125K8MHZ	.\Common\inc\can.h	84;"	d
+BITRATE125K8MHZ	.\Common\inc\can_api.h	63;"	d
+BITRATE20K12MHZ	.\Common\inc\can_api.h	80;"	d
+BITRATE20K16MHZ	.\Common\inc\can_api.h	68;"	d
+BITRATE20K8MHZ	.\Common\inc\can_api.h	59;"	d
+BITRATE250K16MHZ	.\Common\inc\can.h	91;"	d
+BITRATE250K16MHZ	.\Common\inc\can_api.h	71;"	d
+BITRATE250K24MHZ	.\Common\inc\can.h	96;"	d
+BITRATE250K24MHZ	.\Common\inc\can_api.h	76;"	d
+BITRATE250K8MHZ	.\Common\inc\can.h	85;"	d
+BITRATE250K8MHZ	.\Common\inc\can_api.h	64;"	d
+BITRATE25K8MHZ	.\Common\inc\can_api.h	60;"	d
+BITRATE500K16MHZ	.\Common\inc\can.h	92;"	d
+BITRATE500K16MHZ	.\Common\inc\can_api.h	72;"	d
+BITRATE500K24MHZ	.\Common\inc\can.h	97;"	d
+BITRATE500K24MHZ	.\Common\inc\can_api.h	77;"	d
+BITRATE500K8MHZ	.\Common\inc\can.h	86;"	d
+BITRATE500K8MHZ	.\Common\inc\can_api.h	65;"	d
+BITRATE50K8MHZ	.\Common\inc\can_api.h	61;"	d
+BODCTRL	.\Common\inc\LPC11xx.h	/^  __IO uint32_t BODCTRL;                \/*!< Offset: 0x150 BOD control (R\/W) *\/$/;"	m	struct:__anon14
+BOD_IRQHandler	.\Common\src\cstartup_M.s	/^BOD_IRQHandler:$/;"	l
+BOD_IRQn	.\Common\inc\LPC11xx.h	/^  BOD_IRQn                      = 26,       \/*!< Brown Out Detect(BOD) Interrupt                  *\/$/;"	e	enum:IRQn
+BOD_PD	.\Common\inc\pmu.h	28;"	d
+BOffCnt	.\Common\src\can.c	/^volatile uint32_t BOffCnt = 0;$/;"	v
+BRPE	.\Common\inc\LPC11xx.h	/^  __IO uint32_t BRPE;$/;"	m	struct:__anon29
+BT	.\Common\inc\LPC11xx.h	/^  __IO uint32_t BT;$/;"	m	struct:__anon29
+BUFSIZE	.\Common\inc\uart.h	38;"	d
+BURST_MODE	.\Common\inc\adc.h	16;"	d
+BUSY	.\Common\src\iap.c	40;"	d	file:
+BusFault_Handler	.\Common\src\cstartup_M.s	/^BusFault_Handler:$/;"	l
+CALIB	.\Common\inc\core_cm0.h	/^  __I  uint32_t CALIB;                        \/*!< SysTick Calibration Register        *\/$/;"	m	struct:__anon11
+CAND	.\Common\inc\can_api.h	/^} CAND;$/;"	t	typeref:struct:__anon7
+CANOPEN_sdo_read	.\Common\inc\can_api.h	/^    uint32_t   (*CANOPEN_sdo_read)(uint16_t index, uint8_t subindex);$/;"	m	struct:__anon6
+CANOPEN_sdo_req	.\Common\inc\can_api.h	/^    uint8_t    (*CANOPEN_sdo_req)(uint8_t length_req, uint8_t *req_ptr, uint8_t *length_resp, uint8_t *resp_ptr);$/;"	m	struct:__anon6
+CANOPEN_sdo_seg_read	.\Common\inc\can_api.h	/^    uint32_t   (*CANOPEN_sdo_seg_read)(uint16_t index, uint8_t subindex, uint8_t openclose, uint8_t *length, uint8_t *data, uint8_t *last);$/;"	m	struct:__anon6
+CANOPEN_sdo_seg_write	.\Common\inc\can_api.h	/^    uint32_t   (*CANOPEN_sdo_seg_write)(uint16_t index, uint8_t subindex, uint8_t openclose, uint8_t length, uint8_t *data, uint8_t *fast_resp);$/;"	m	struct:__anon6
+CANOPEN_sdo_write	.\Common\inc\can_api.h	/^    uint32_t   (*CANOPEN_sdo_write)(uint16_t index, uint8_t subindex, uint8_t *dat_ptr);$/;"	m	struct:__anon6
+CANRxDone	.\Common\src\can.c	/^uint32_t CANRxDone[MSG_OBJ_MAX];$/;"	v
+CANRxDone	.\Common\src\can_api.c	/^uint32_t CANRxDone[MSG_OBJ_MAX]; $/;"	v
+CANStatusLog	.\Common\src\can.c	/^uint32_t CANStatusLog[100];$/;"	v
+CANStatusLogCount	.\Common\src\can.c	/^uint32_t CANStatusLogCount = 0;$/;"	v
+CAN_API	.\Common\inc\can_api.h	/^} CAN_API;$/;"	t	typeref:struct:__anon8
+CAN_CALLBACKS	.\Common\inc\can_api.h	/^} CAN_CALLBACKS;$/;"	t	typeref:struct:__anon6
+CAN_CANOPENCFG	.\Common\inc\can_api.h	/^} CAN_CANOPENCFG;$/;"	t	typeref:struct:__anon5
+CAN_Config_calb	.\Common\src\can_api.c	/^bool_t CAN_Config_calb(CAN_CALLBACKS *callback_cfg)$/;"	f
+CAN_ConfigureMessages	.\Common\src\can.c	/^void CAN_ConfigureMessages( void )$/;"	f
+CAN_ConfigureMessages	.\Common\src\can_api.c	/^bool_t CAN_ConfigureMessages(CAN_MSG_OBJ *msg_obj)$/;"	f
+CAN_DEBUG	.\Common\inc\can.h	40;"	d
+CAN_ERROR_ACK	.\Common\inc\can_api.h	89;"	d
+CAN_ERROR_BIT0	.\Common\inc\can_api.h	91;"	d
+CAN_ERROR_BIT1	.\Common\inc\can_api.h	90;"	d
+CAN_ERROR_BOFF	.\Common\inc\can_api.h	86;"	d
+CAN_ERROR_CRC	.\Common\inc\can_api.h	92;"	d
+CAN_ERROR_FORM	.\Common\inc\can_api.h	88;"	d
+CAN_ERROR_NONE	.\Common\inc\can_api.h	83;"	d
+CAN_ERROR_PASS	.\Common\inc\can_api.h	84;"	d
+CAN_ERROR_STUF	.\Common\inc\can_api.h	87;"	d
+CAN_ERROR_WARN	.\Common\inc\can_api.h	85;"	d
+CAN_Error	.\Common\src\can_api.c	/^void CAN_Error(uint32_t error_info)$/;"	f
+CAN_GetCanTxFinished	.\Common\src\can_api.c	/^uint8_t CAN_GetCanTxFinished(void)$/;"	f
+CAN_IRQHandler	.\Common\src\can.c	/^void CAN_IRQHandler(void) $/;"	f
+CAN_IRQHandler	.\Common\src\can_api.c	/^void CAN_IRQHandler(void) $/;"	f
+CAN_IRQHandler	.\Common\src\cstartup_M.s	/^CAN_IRQHandler:$/;"	l
+CAN_IRQn	.\Common\inc\LPC11xx.h	/^  CAN_IRQn                      = 13,       \/*!< CAN Interrupt                                    *\/$/;"	e	enum:IRQn
+CAN_Init	.\Common\src\can.c	/^void CAN_Init( uint32_t CANBitClk )$/;"	f
+CAN_Init	.\Common\src\can_api.c	/^void CAN_Init(uint8_t clkdiv, uint32_t CANBitClk, bool_t enisr)$/;"	f
+CAN_MSGOBJ_DAT	.\Common\inc\can_api.h	18;"	d
+CAN_MSGOBJ_EXT	.\Common\inc\can_api.h	17;"	d
+CAN_MSGOBJ_RTR	.\Common\inc\can_api.h	19;"	d
+CAN_MSGOBJ_STD	.\Common\inc\can_api.h	16;"	d
+CAN_MSG_OBJ	.\Common\inc\can_api.h	/^} CAN_MSG_OBJ;$/;"	t	typeref:struct:__anon2
+CAN_MessageProcess	.\Common\src\can.c	/^void CAN_MessageProcess( uint8_t MsgNo )$/;"	f
+CAN_ODCONSTENTRY	.\Common\inc\can_api.h	/^} CAN_ODCONSTENTRY;$/;"	t	typeref:struct:__anon3
+CAN_ODENTRY	.\Common\inc\can_api.h	/^} CAN_ODENTRY;$/;"	t	typeref:struct:__anon4
+CAN_Receive	.\Common\src\can_api.c	/^bool_t CAN_Receive(CAN_MSG_OBJ *msg_obj)$/;"	f
+CAN_STATUS_INTERRUPT	.\Common\inc\can.h	101;"	d
+CAN_Send	.\Common\src\can.c	/^void CAN_Send( uint8_t msg_no, uint8_t received_flag, uint32_t *msg_ptr )$/;"	f
+CAN_Send	.\Common\src\can_api.c	/^bool_t CAN_Send(CAN_MSG_OBJ *msg_obj)$/;"	f
+CAN_SetCanTxFinished	.\Common\src\can_api.c	/^void CAN_SetCanTxFinished(void)$/;"	f
+CAN_error	.\Common\inc\can_api.h	/^    void       (*CAN_error)(uint32_t error_info);$/;"	m	struct:__anon6
+CAN_recv	.\Common\src\can_api.c	/^void CAN_recv(uint8_t msg_obj)$/;"	f
+CAN_rx	.\Common\inc\can_api.h	/^    void       (*CAN_rx)(uint8_t msg_obj);$/;"	m	struct:__anon6
+CAN_send	.\Common\src\can_api.c	/^void CAN_send(uint8_t msg_obj)$/;"	f
+CAN_tx	.\Common\inc\can_api.h	/^    void       (*CAN_tx)(uint8_t msg_obj);$/;"	m	struct:__anon6
+CCR	.\Common\inc\LPC11xx.h	/^  __IO uint32_t CCR;                    \/*!< Offset: 0x028 Capture Control Register (R\/W) *\/$/;"	m	struct:__anon20
+CCR	.\Common\inc\core_cm0.h	/^  __IO uint32_t CCR;                          \/*!< Configuration Control Register                           *\/$/;"	m	struct:__anon10
+CLKDIV	.\Common\inc\LPC11xx.h	/^  __IO uint32_t CLKDIV;				\/* 0x180 *\/$/;"	m	struct:__anon29
+CLKOUTCLKSEL	.\Common\inc\LPC11xx.h	/^  __IO uint32_t CLKOUTCLKSEL;           \/*!< Offset: 0x0E0 CLKOUT clock source select (R\/W) *\/$/;"	m	struct:__anon14
+CLKOUTCLK_SRC_IRC_OSC	.\Common\inc\clkconfig.h	18;"	d
+CLKOUTCLK_SRC_MAIN_CLK	.\Common\inc\clkconfig.h	21;"	d
+CLKOUTCLK_SRC_SYS_OSC	.\Common\inc\clkconfig.h	19;"	d
+CLKOUTCLK_SRC_WDT_OSC	.\Common\inc\clkconfig.h	20;"	d
+CLKOUTDIV	.\Common\inc\LPC11xx.h	/^  __IO uint32_t CLKOUTDIV;              \/*!< Offset: 0x0E8 CLKOUT clock divider (R\/W) *\/       $/;"	m	struct:__anon14
+CLKOUTUEN	.\Common\inc\LPC11xx.h	/^  __IO uint32_t CLKOUTUEN;              \/*!< Offset: 0x0E4 CLKOUT clock source update enable (R\/W) *\/$/;"	m	struct:__anon14
+CLKOUT_Setup	.\Common\src\clkconfig.c	/^void CLKOUT_Setup ( uint32_t clksrc )$/;"	f
+CLOCK_SETUP	.\Common\src\system_LPC11xx.c	71;"	d	file:
+CMD_SUCCESS	.\Common\src\iap.c	29;"	d	file:
+CNTL	.\Common\inc\LPC11xx.h	/^  __IO uint32_t CNTL;				\/* 0x000 *\/$/;"	m	struct:__anon29
+COMPARE_ERROR	.\Common\src\iap.c	39;"	d	file:
+CONCLR	.\Common\inc\LPC11xx.h	/^  __O  uint32_t CONCLR;                 \/*!< Offset: 0x018 I2C Control Clear Register ( \/W) *\/$/;"	m	struct:__anon26
+CONSET	.\Common\inc\LPC11xx.h	/^  __IO uint32_t CONSET;                 \/*!< Offset: 0x000 I2C Control Set Register (R\/W) *\/$/;"	m	struct:__anon26
+COUNT_ERROR	.\Common\src\iap.c	35;"	d	file:
+CPSR	.\Common\inc\LPC11xx.h	/^  __IO uint32_t CPSR;                   \/*!< Offset: 0x010 Clock Prescale Register (R\/W) *\/$/;"	m	struct:__anon25
+CPUID	.\Common\inc\core_cm0.h	/^  __I  uint32_t CPUID;                        \/*!< CPU ID Base Register                                     *\/$/;"	m	struct:__anon10
+CR	.\Common\inc\LPC11xx.h	/^  __IO uint32_t CR;                     \/*!< Offset: 0x000       A\/D Control Register (R\/W) *\/$/;"	m	struct:__anon28
+CR0	.\Common\inc\LPC11xx.h	/^  __I  uint32_t CR0;                    \/*!< Offset: 0x02C Capture Register 0 (R\/ ) *\/$/;"	m	struct:__anon20
+CR0	.\Common\inc\LPC11xx.h	/^  __IO uint32_t CR0;                    \/*!< Offset: 0x000 Control Register 0 (R\/W) *\/$/;"	m	struct:__anon25
+CR1	.\Common\inc\LPC11xx.h	/^  __IO uint32_t CR1;                    \/*!< Offset: 0x004 Control Register 1 (R\/W) *\/$/;"	m	struct:__anon25
+CT16B0_IRQHandler	.\Common\src\cstartup_M.s	/^CT16B0_IRQHandler:$/;"	l
+CT16B0_IRQHandler	.\Common\src\timer16.c	/^void CT16B0_IRQHandler(void)$/;"	f
+CT16B1_IRQHandler	.\Common\src\cstartup_M.s	/^CT16B1_IRQHandler:$/;"	l
+CT16B1_IRQHandler	.\Common\src\timer16.c	/^void CT16B1_IRQHandler(void)$/;"	f
+CT32B0_IRQHandler	.\Common\src\cstartup_M.s	/^CT32B0_IRQHandler:$/;"	l
+CT32B0_IRQHandler	.\Common\src\timer32.c	/^void CT32B0_IRQHandler(void)$/;"	f
+CT32B1_IRQHandler	.\Common\src\cstartup_M.s	/^CT32B1_IRQHandler:$/;"	l
+CT32B1_IRQHandler	.\Common\src\timer32.c	/^void CT32B1_IRQHandler(void)$/;"	f
+CTCR	.\Common\inc\LPC11xx.h	/^  __IO uint32_t CTCR;                   \/*!< Offset: 0x070 Count Control Register (R\/W) *\/$/;"	m	struct:__anon20
+CTRL	.\Common\inc\can.h	131;"	d
+CTRL	.\Common\inc\core_cm0.h	/^  __IO uint32_t CTRL;                         \/*!< SysTick Control and Status Register *\/$/;"	m	struct:__anon11
+CTRL_CCE	.\Common\inc\can.h	115;"	d
+CTRL_CCE	.\Common\inc\can_api.h	27;"	d
+CTRL_DAR	.\Common\inc\can.h	114;"	d
+CTRL_DAR	.\Common\inc\can_api.h	26;"	d
+CTRL_EIE	.\Common\inc\can.h	113;"	d
+CTRL_EIE	.\Common\inc\can_api.h	25;"	d
+CTRL_IE	.\Common\inc\can.h	111;"	d
+CTRL_IE	.\Common\inc\can_api.h	23;"	d
+CTRL_INIT	.\Common\inc\can.h	110;"	d
+CTRL_INIT	.\Common\inc\can_api.h	22;"	d
+CTRL_SIE	.\Common\inc\can.h	112;"	d
+CTRL_SIE	.\Common\inc\can_api.h	24;"	d
+CTRL_TEST	.\Common\inc\can.h	116;"	d
+CTRL_TEST	.\Common\inc\can_api.h	28;"	d
+CanAPI	.\Common\src\can_api.c	/^static CAN_API **CanAPI = (CAN_API **)0x1fff1ff8UL;   \/\/ start address of can api rom.$/;"	v	file:
+CanTxFinished	.\Common\src\can_api.c	/^static volatile uint8_t  CanTxFinished;               \/\/ can data send finished status$/;"	v	file:
+ClockSource	.\Common\src\system_LPC11xx.c	/^uint32_t ClockSource = OSC_CLK;$/;"	v
+CoreDebug	.\Common\inc\core_cm0.h	145;"	d
+CoreDebug_BASE	.\Common\inc\core_cm0.h	137;"	d
+CoreDebug_Type	.\Common\inc\core_cm0.h	/^} CoreDebug_Type;$/;"	t	typeref:struct:__anon12
+CreateTimer	.\Common\src\timerman.c	/^uint32_t CreateTimer(uint32_t tag, void (*tmrproc)(uint32_t))$/;"	f
+DAT	.\Common\inc\LPC11xx.h	/^  __IO uint32_t DAT;                    \/*!< Offset: 0x008 I2C Data Register (R\/W) *\/$/;"	m	struct:__anon26
+DATA	.\Common\inc\LPC11xx.h	/^    __IO uint32_t DATA;                 \/*!< Offset: 0x3FFC Port data Register (R\/W) *\/$/;"	m	struct:__anon17::__anon18::__anon19
+DATAA	.\Common\inc\can.h	128;"	d
+DATAB	.\Common\inc\can.h	127;"	d
+DATA_ACK	.\Common\inc\i2c.h	34;"	d
+DATA_BUFFER	.\Common\inc\LPC11xx.h	/^  __I  uint32_t DATA_BUFFER;            \/*!< Offset: 0x02C Data buffer register ( \/W) *\/$/;"	m	struct:__anon26
+DATA_NACK	.\Common\inc\i2c.h	35;"	d
+DCD_LOC	.\Common\inc\LPC11xx.h	/^  __IO uint32_t DCD_LOC;                \/*!< Offset: 0x0B8 DCD pin location select Register (R\/W) *\/$/;"	m	struct:__anon15
+DCRDR	.\Common\inc\core_cm0.h	/^  __IO uint32_t DCRDR;                        \/*!< Debug Core Register Data Register               *\/$/;"	m	struct:__anon12
+DCRSR	.\Common\inc\core_cm0.h	/^  __O  uint32_t DCRSR;                        \/*!< Debug Core Register Selector Register           *\/$/;"	m	struct:__anon12
+DELAY_COUNT	.\Common\inc\ssp.h	37;"	d
+DELAY_COUNT	.\ssp.h	38;"	d
+DEMCR	.\Common\inc\core_cm0.h	/^  __IO uint32_t DEMCR;                        \/*!< Debug Exception and Monitor Control Register    *\/$/;"	m	struct:__anon12
+DEVICE_ID	.\Common\inc\LPC11xx.h	/^  __I  uint32_t DEVICE_ID;              \/*!< Offset: 0x3F4 Device ID (R\/ ) *\/$/;"	m	struct:__anon14
+DFSR	.\Common\inc\core_cm0.h	/^  __IO uint32_t DFSR;                         \/*!< Debug Fault Status Register                              *\/$/;"	m	struct:__anon10
+DHCSR	.\Common\inc\core_cm0.h	/^  __IO uint32_t DHCSR;                        \/*!< Debug Halting Control and Status Register       *\/$/;"	m	struct:__anon12
+DIR	.\Common\inc\LPC11xx.h	/^  __IO uint32_t DIR;                    \/*!< Offset: 0x8000 Data direction Register (R\/W) *\/$/;"	m	struct:__anon17
+DLC	.\Common\inc\can.h	156;"	d
+DLC_MASK	.\Common\inc\can.h	160;"	d
+DLC_MAX	.\Common\inc\can.h	56;"	d
+DLC_MAX	.\Common\inc\can_api.h	36;"	d
+DLL	.\Common\inc\LPC11xx.h	/^  __IO uint32_t  DLL;                   \/*!< Offset: 0x000 Divisor Latch LSB (R\/W) *\/$/;"	m	union:__anon21::__anon22
+DLM	.\Common\inc\LPC11xx.h	/^  __IO uint32_t  DLM;                   \/*!< Offset: 0x004 Divisor Latch MSB (R\/W) *\/$/;"	m	union:__anon21::__anon23
+DR	.\Common\inc\LPC11xx.h	/^  __IO uint32_t DR;                     \/*!< Offset: 0x008 Data Register (R\/W) *\/$/;"	m	struct:__anon25
+DR	.\Common\inc\LPC11xx.h	/^  __IO uint32_t DR[8];                  \/*!< Offset: 0x010-0x02C A\/D Channel 0..7 Data Register (R\/W) *\/$/;"	m	struct:__anon28
+DSR_LOC	.\Common\inc\LPC11xx.h	/^  __IO uint32_t DSR_LOC;                \/*!< Offset: 0x0B4 DSR pin location select Register (R\/W) *\/$/;"	m	struct:__anon15
+DST_ADDR_ERROR	.\Common\src\iap.c	32;"	d	file:
+DST_ADDR_NOT_MAPPED	.\Common\src\iap.c	34;"	d	file:
+DebugMon_Handler	.\Common\src\cstartup_M.s	/^DebugMon_Handler:$/;"	l
+Default_Handler	.\Common\src\cstartup_M.s	/^Default_Handler:$/;"	l
+EC	.\Common\inc\LPC11xx.h	/^  __IO uint32_t EC;$/;"	m	struct:__anon29
+EINT0_IRQn	.\Common\inc\LPC11xx.h	/^  EINT0_IRQn                    = 31,       \/*!< External Interrupt 0 Interrupt                   *\/$/;"	e	enum:IRQn
+EINT1_IRQn	.\Common\inc\LPC11xx.h	/^  EINT1_IRQn                    = 30,       \/*!< External Interrupt 1 Interrupt                   *\/$/;"	e	enum:IRQn
+EINT2_IRQn	.\Common\inc\LPC11xx.h	/^  EINT2_IRQn                    = 29,       \/*!< External Interrupt 2 Interrupt                   *\/$/;"	e	enum:IRQn
+EINT3_IRQn	.\Common\inc\LPC11xx.h	/^  EINT3_IRQn                    = 28,       \/*!< External Interrupt 3 Interrupt                   *\/$/;"	e	enum:IRQn
+EMC0	.\Common\inc\timer16.h	18;"	d
+EMC0	.\Common\inc\timer32.h	17;"	d
+EMC1	.\Common\inc\timer16.h	19;"	d
+EMC1	.\Common\inc\timer32.h	18;"	d
+EMC2	.\Common\inc\timer16.h	20;"	d
+EMC2	.\Common\inc\timer32.h	19;"	d
+EMC3	.\Common\inc\timer16.h	21;"	d
+EMC3	.\Common\inc\timer32.h	20;"	d
+EMR	.\Common\inc\LPC11xx.h	/^  __IO uint32_t EMR;                    \/*!< Offset: 0x03C External Match Register (R\/W) *\/$/;"	m	struct:__anon20
+EOB	.\Common\inc\can.h	155;"	d
+EPassCnt	.\Common\src\can.c	/^volatile uint32_t EPassCnt = 0;$/;"	v
+EWarnCnt	.\Common\src\can.c	/^volatile uint32_t EWarnCnt = 0;$/;"	v
+ErrorInfo	.\Common\src\can_api.c	/^static volatile uint32_t ErrorInfo;				      \/\/ error information$/;"	v	file:
+ExeOverTimeProc	.\Common\src\timerman.c	/^void ExeOverTimeProc(void)$/;"	f
+FALSE	.\Common\inc\type.h	20;"	d
+FAST_MODE_PLUS	.\Common\inc\i2c.h	17;"	d
+FCR	.\Common\inc\LPC11xx.h	/^  __O  uint32_t  FCR;                   \/*!< Offset: 0x008 FIFO Control Register ( \/W) *\/$/;"	m	union:__anon21::__anon24
+FDR	.\Common\inc\LPC11xx.h	/^  __IO uint32_t  FDR;                   \/*!< Offset: 0x028 Fractional Divider Register (R\/W) *\/$/;"	m	struct:__anon21
+FEED	.\Common\inc\LPC11xx.h	/^  __O  uint32_t FEED;                   \/*!< Offset: 0x008 Watchdog feed sequence register ( \/W) *\/$/;"	m	struct:__anon27
+FIFOLVL	.\Common\inc\LPC11xx.h	/^  __I  uint32_t  FIFOLVL;               \/*!< Offset: 0x058 FIFO Level Register (R\/ ) *\/$/;"	m	struct:__anon21
+FIFOSIZE	.\Common\inc\ssp.h	35;"	d
+FIFOSIZE	.\ssp.h	36;"	d
+FLASH_PD	.\Common\inc\pmu.h	27;"	d
+GDR	.\Common\inc\LPC11xx.h	/^  __IO uint32_t GDR;                    \/*!< Offset: 0x004       A\/D Global Data Register (R\/W) *\/$/;"	m	struct:__anon28
+GPIOInit	.\Common\src\gpio.c	/^void GPIOInit( void )$/;"	f
+GPIOIntClear	.\Common\src\gpio.c	/^void GPIOIntClear( uint32_t portNum, uint32_t bitPosi )$/;"	f
+GPIOIntDisable	.\Common\src\gpio.c	/^void GPIOIntDisable( uint32_t portNum, uint32_t bitPosi )$/;"	f
+GPIOIntEnable	.\Common\src\gpio.c	/^void GPIOIntEnable( uint32_t portNum, uint32_t bitPosi )$/;"	f
+GPIOIntStatus	.\Common\src\gpio.c	/^uint32_t GPIOIntStatus( uint32_t portNum, uint32_t bitPosi )$/;"	f
+GPIOReadValue	.\Common\src\gpio.c	/^ uint32_t GPIOReadValue( uint32_t portNum, uint32_t bitPosi)$/;"	f
+GPIOSetDir	.\Common\src\gpio.c	/^void GPIOSetDir( uint32_t portNum, uint32_t bitPosi, uint32_t dir )$/;"	f
+GPIOSetInterrupt	.\Common\src\gpio.c	/^void GPIOSetInterrupt( uint32_t portNum, uint32_t bitPosi, uint32_t sense,$/;"	f
+GPIOSetValue	.\Common\src\gpio.c	/^void GPIOSetValue( uint32_t portNum, uint32_t bitPosi, uint32_t bitVal )$/;"	f
+GPIOShadowPort0	.\Common\src\gpio.c	/^volatile uint32_t GPIOShadowPort0;$/;"	v
+GPIOShadowPort1	.\Common\src\gpio.c	/^volatile uint32_t GPIOShadowPort1;$/;"	v
+GPIOShadowPort2	.\Common\src\gpio.c	/^volatile uint32_t GPIOShadowPort2;$/;"	v
+GPIOShadowPort3	.\Common\src\gpio.c	/^volatile uint32_t GPIOShadowPort3;$/;"	v
+GPREG0	.\Common\inc\LPC11xx.h	/^  __IO uint32_t GPREG0;                 \/*!< Offset: 0x004 General purpose Register 0 (R\/W) *\/$/;"	m	struct:__anon16
+GPREG1	.\Common\inc\LPC11xx.h	/^  __IO uint32_t GPREG1;                 \/*!< Offset: 0x008 General purpose Register 1 (R\/W) *\/$/;"	m	struct:__anon16
+GPREG2	.\Common\inc\LPC11xx.h	/^  __IO uint32_t GPREG2;                 \/*!< Offset: 0x00C General purpose Register 2 (R\/W) *\/$/;"	m	struct:__anon16
+GPREG3	.\Common\inc\LPC11xx.h	/^  __IO uint32_t GPREG3;                 \/*!< Offset: 0x010 General purpose Register 3 (R\/W) *\/$/;"	m	struct:__anon16
+GPREG4	.\Common\inc\LPC11xx.h	/^  __IO uint32_t GPREG4;                 \/*!< Offset: 0x014 General purpose Register 4 (R\/W) *\/$/;"	m	struct:__anon16
+GulParamin	.\Common\src\iap.c	/^unsigned int  GulParamin[8];                                                  \/* IAP入口参数缓冲区            *\/$/;"	v
+GulParamout	.\Common\src\iap.c	/^unsigned int  GulParamout[8];                                                 \/* IAP出口参数缓冲区            *\/$/;"	v
+HardFault_Handler	.\Common\src\cstartup_M.s	/^HardFault_Handler:$/;"	l
+HardFault_IRQn	.\Common\inc\LPC11xx.h	/^  HardFault_IRQn                = -13,    \/*!< 3 Cortex-M0 Hard Fault Interrupt                   *\/$/;"	e	enum:IRQn
+I2ADR_I2C	.\Common\inc\i2c.h	49;"	d
+I2C0_IRQHandler	.\Common\src\cstartup_M.s	/^I2C0_IRQHandler:$/;"	l
+I2C0_IRQHandler	.\Common\src\i2c.c	/^void I2C0_IRQHandler(void) $/;"	f
+I2CCount	.\Common\src\i2c.c	/^volatile uint32_t I2CCount = 0;$/;"	v
+I2CEngine	.\Common\src\i2c.c	/^uint32_t I2CEngine( void )    \/\/I2CEngine(void)是I2C的运行调度程序，在书中有介绍到。$/;"	f
+I2CInit	.\Common\src\i2c.c	/^uint32_t I2CInit( uint32_t I2cMode ) $/;"	f
+I2CMASTER	.\Common\inc\i2c.h	22;"	d
+I2CMasterBuffer	.\Common\src\i2c.c	/^volatile uint8_t I2CMasterBuffer[I2C_BUFSIZE];$/;"	v
+I2CMasterState	.\Common\src\i2c.c	/^volatile uint32_t I2CMasterState = I2C_IDLE;$/;"	v
+I2CMode	.\Common\src\i2c.c	/^volatile uint32_t I2CMode;$/;"	v
+I2CONCLR_AAC	.\Common\inc\i2c.h	43;"	d
+I2CONCLR_I2ENC	.\Common\inc\i2c.h	46;"	d
+I2CONCLR_SIC	.\Common\inc\i2c.h	44;"	d
+I2CONCLR_STAC	.\Common\inc\i2c.h	45;"	d
+I2CONSET_AA	.\Common\inc\i2c.h	38;"	d
+I2CONSET_I2EN	.\Common\inc\i2c.h	37;"	d
+I2CONSET_SI	.\Common\inc\i2c.h	39;"	d
+I2CONSET_STA	.\Common\inc\i2c.h	41;"	d
+I2CONSET_STO	.\Common\inc\i2c.h	40;"	d
+I2CReadLength	.\Common\src\i2c.c	/^volatile uint32_t I2CReadLength;$/;"	v
+I2CSLAVE	.\Common\inc\i2c.h	23;"	d
+I2CSlaveBuffer	.\Common\src\i2c.c	/^volatile uint8_t I2CSlaveBuffer[I2C_BUFSIZE];$/;"	v
+I2CSlaveState	.\Common\src\i2c.c	/^volatile uint32_t I2CSlaveState = I2C_IDLE;$/;"	v
+I2CStart	.\Common\src\i2c.c	/^uint32_t I2CStart( void )$/;"	f
+I2CStop	.\Common\src\i2c.c	/^uint32_t I2CStop( void )$/;"	f
+I2CWriteLength	.\Common\src\i2c.c	/^volatile uint32_t I2CWriteLength;$/;"	v
+I2C_BUFSIZE	.\Common\inc\i2c.h	19;"	d
+I2C_IDLE	.\Common\inc\i2c.h	30;"	d
+I2C_IRQn	.\Common\inc\LPC11xx.h	/^  I2C_IRQn                      = 15,       \/*!< I2C Interrupt                                    *\/$/;"	e	enum:IRQn
+I2C_REPEATED_START	.\Common\inc\i2c.h	33;"	d
+I2C_RESTARTED	.\Common\inc\i2c.h	32;"	d
+I2C_STARTED	.\Common\inc\i2c.h	31;"	d
+I2DAT_I2C	.\Common\inc\i2c.h	48;"	d
+I2SCLH_HS_SCLH	.\Common\inc\i2c.h	52;"	d
+I2SCLH_SCLH	.\Common\inc\i2c.h	50;"	d
+I2SCLL_HS_SCLL	.\Common\inc\i2c.h	53;"	d
+I2SCLL_SCLL	.\Common\inc\i2c.h	51;"	d
+IAP_ADDRESS	.\Common\src\iap.c	190;"	d	file:
+IAP_BLANKCHK	.\Common\src\iap.c	18;"	d	file:
+IAP_BOOTCODEID	.\Common\src\iap.c	21;"	d	file:
+IAP_COMPARE	.\Common\src\iap.c	22;"	d	file:
+IAP_ENTER_ADR	.\Common\src\iap.c	6;"	d	file:
+IAP_ERASESECTOR	.\Common\src\iap.c	16;"	d	file:
+IAP_Entry	.\Common\src\iap.c	/^void (*IAP_Entry) (unsigned int ulParam_tab[], unsigned int ulPesult_tab[]);$/;"	v
+IAP_FCCLK	.\Common\src\iap.c	46;"	d	file:
+IAP_Prepare	.\Common\src\iap.c	11;"	d	file:
+IAP_RAMTOFLASH	.\Common\src\iap.c	13;"	d	file:
+IAP_READPARTID	.\Common\src\iap.c	20;"	d	file:
+IAP_SECTOR_NUMBER	.\Common\src\iap.c	189;"	d	file:
+IBE	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IBE;                    \/*!< Offset: 0x8008 Interrupt both edges Register (R\/W) *\/$/;"	m	struct:__anon17
+IC	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IC;                     \/*!< Offset: 0x801C Interrupt clear Register (R\/W) *\/$/;"	m	struct:__anon17
+ICER	.\Common\inc\core_cm0.h	/^  __IO uint32_t ICER[1];                      \/*!< Interrupt Clear Enable Register          *\/$/;"	m	struct:__anon9
+ICPR	.\Common\inc\core_cm0.h	/^  __IO uint32_t ICPR[1];                      \/*!< Interrupt Clear Pending Register         *\/$/;"	m	struct:__anon9
+ICR	.\Common\inc\LPC11xx.h	/^  __IO uint32_t ICR;                    \/*!< Offset: 0x020 SSPICR Interrupt Clear Register (R\/W) *\/$/;"	m	struct:__anon25
+ICSR	.\Common\inc\core_cm0.h	/^  __IO uint32_t ICSR;                         \/*!< Interrupt Control State Register                         *\/$/;"	m	struct:__anon10
+ID_DIR	.\Common\inc\can.h	144;"	d
+ID_EXT_MASK	.\Common\inc\can.h	159;"	d
+ID_MTD	.\Common\inc\can.h	143;"	d
+ID_MVAL	.\Common\inc\can.h	142;"	d
+ID_STD_MASK	.\Common\inc\can.h	158;"	d
+IE	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IE;                     \/*!< Offset: 0x8010 Interrupt mask Register (R\/W) *\/$/;"	m	struct:__anon17
+IER	.\Common\inc\LPC11xx.h	/^  __IO uint32_t  IER;                   \/*!< Offset: 0x000 Interrupt Enable Register (R\/W) *\/$/;"	m	union:__anon21::__anon23
+IER_RBR	.\Common\inc\uart.h	19;"	d
+IER_RLS	.\Common\inc\uart.h	21;"	d
+IER_THRE	.\Common\inc\uart.h	20;"	d
+IEV	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IEV;                    \/*!< Offset: 0x800C Interrupt event Register  (R\/W) *\/$/;"	m	struct:__anon17
+IF1_ARB1	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IF1_ARB1;$/;"	m	struct:__anon29
+IF1_ARB2	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IF1_ARB2;$/;"	m	struct:__anon29
+IF1_CMDMSK	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IF1_CMDMSK;$/;"	m	struct:__anon29
+IF1_CMDREQ	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IF1_CMDREQ;			\/* 0x020 *\/$/;"	m	struct:__anon29
+IF1_DA1	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IF1_DA1;$/;"	m	struct:__anon29
+IF1_DA2	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IF1_DA2;$/;"	m	struct:__anon29
+IF1_DB1	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IF1_DB1;$/;"	m	struct:__anon29
+IF1_DB2	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IF1_DB2;$/;"	m	struct:__anon29
+IF1_MCTRL	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IF1_MCTRL;$/;"	m	struct:__anon29
+IF1_MSK1	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IF1_MSK1;$/;"	m	struct:__anon29
+IF1_MSK2	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IF1_MSK2;$/;"	m	struct:__anon29
+IF2_ARB1	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IF2_ARB1;$/;"	m	struct:__anon29
+IF2_ARB2	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IF2_ARB2;$/;"	m	struct:__anon29
+IF2_CMDMSK	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IF2_CMDMSK;$/;"	m	struct:__anon29
+IF2_CMDREQ	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IF2_CMDREQ;			\/* 0x080 *\/$/;"	m	struct:__anon29
+IF2_DA1	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IF2_DA1;$/;"	m	struct:__anon29
+IF2_DA2	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IF2_DA2;$/;"	m	struct:__anon29
+IF2_DB1	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IF2_DB1;$/;"	m	struct:__anon29
+IF2_DB2	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IF2_DB2;$/;"	m	struct:__anon29
+IF2_MCTRL	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IF2_MCTRL;$/;"	m	struct:__anon29
+IF2_MSK1	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IF2_MSK1;$/;"	m	struct:__anon29
+IF2_MSK2	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IF2_MSK2;$/;"	m	struct:__anon29
+IFCREQ_BUSY	.\Common\inc\can.h	107;"	d
+IIR	.\Common\inc\LPC11xx.h	/^  __I  uint32_t  IIR;                   \/*!< Offset: 0x008 Interrupt ID Register (R\/ ) *\/$/;"	m	union:__anon21::__anon24
+IIR_CTI	.\Common\inc\uart.h	26;"	d
+IIR_PEND	.\Common\inc\uart.h	23;"	d
+IIR_RDA	.\Common\inc\uart.h	25;"	d
+IIR_RLS	.\Common\inc\uart.h	24;"	d
+IIR_THRE	.\Common\inc\uart.h	27;"	d
+IMSC	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IMSC;                   \/*!< Offset: 0x014 Interrupt Mask Set and Clear Register (R\/W) *\/$/;"	m	struct:__anon25
+INT	.\Common\inc\LPC11xx.h	/^  __IO uint32_t INT;$/;"	m	struct:__anon29
+INTEN	.\Common\inc\LPC11xx.h	/^  __IO uint32_t INTEN;                  \/*!< Offset: 0x00C       A\/D Interrupt Enable Register (R\/W) *\/$/;"	m	struct:__anon28
+INTP	.\Common\inc\can.h	149;"	d
+INTPND	.\Common\inc\can.h	130;"	d
+INVALID_COMMAND	.\Common\src\iap.c	30;"	d	file:
+INVALID_SECTOR	.\Common\src\iap.c	36;"	d	file:
+IPR	.\Common\inc\core_cm0.h	/^  __IO uint32_t IPR[8];                       \/*!< Interrupt Priority Register              *\/$/;"	m	struct:__anon9
+IR	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IR;                     \/*!< Offset: 0x000 Interrupt Register (R\/W) *\/$/;"	m	struct:__anon20
+IR1	.\Common\inc\LPC11xx.h	/^  __I  uint32_t IR1;				\/* 0x140 *\/$/;"	m	struct:__anon29
+IR2	.\Common\inc\LPC11xx.h	/^  __I  uint32_t IR2;$/;"	m	struct:__anon29
+IRCCTRL	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IRCCTRL;                \/*!< Offset: 0x028 IRC control (R\/W) *\/$/;"	m	struct:__anon14
+IRC_OSC	.\Common\src\system_LPC11xx.c	92;"	d	file:
+IRC_OUT_PD	.\Common\inc\pmu.h	25;"	d
+IRC_PD	.\Common\inc\pmu.h	26;"	d
+IRQn	.\Common\inc\LPC11xx.h	/^typedef enum IRQn$/;"	g
+IRQn_Type	.\Common\inc\LPC11xx.h	/^} IRQn_Type;$/;"	t	typeref:enum:IRQn
+IS	.\Common\inc\LPC11xx.h	/^  __IO uint32_t IS;                     \/*!< Offset: 0x8004 Interrupt sense Register (R\/W) *\/$/;"	m	struct:__anon17
+ISER	.\Common\inc\core_cm0.h	/^  __IO uint32_t ISER[1];                      \/*!< Interrupt Set Enable Register            *\/$/;"	m	struct:__anon9
+ISPR	.\Common\inc\core_cm0.h	/^  __IO uint32_t ISPR[1];                      \/*!< Interrupt Set Pending Register           *\/$/;"	m	struct:__anon9
+InitStep	.\Common\src\stepmotor.c	/^void InitStep()$/;"	f
+InitStep	.\stepmotor.c	/^void InitStep()$/;"	f
+InitTimerMan	.\Common\src\timerman.c	/^void InitTimerMan(void)$/;"	f
+JTAG_TCK_PIO0_10	.\Common\inc\LPC11xx.h	/^  __IO uint32_t JTAG_TCK_PIO0_10;       \/*!< Offset: 0x068 I\/O configuration for pin SWCLK\/PIO0_10\/SCK0\/CT16B0_MAT2 (R\/W) *\/$/;"	m	struct:__anon15
+JTAG_TDI_PIO0_11	.\Common\inc\LPC11xx.h	/^  __IO uint32_t JTAG_TDI_PIO0_11;       \/*!< Offset: 0x074 I\/O configuration for pin TDI\/PIO0_11\/AD0\/CT32B0_MAT3 (R\/W) *\/$/;"	m	struct:__anon15
+JTAG_TDO_PIO1_1	.\Common\inc\LPC11xx.h	/^  __IO uint32_t JTAG_TDO_PIO1_1;        \/*!< Offset: 0x07C I\/O configuration for pin TDO\/PIO1_1\/AD2\/CT32B1_MAT0 (R\/W) *\/$/;"	m	struct:__anon15
+JTAG_TMS_PIO1_0	.\Common\inc\LPC11xx.h	/^  __IO uint32_t JTAG_TMS_PIO1_0;        \/*!< Offset: 0x078 I\/O configuration for pin TMS\/PIO1_0\/AD1\/CT32B1_CAP0 (R\/W) *\/ $/;"	m	struct:__anon15
+JTAG_nTRST_PIO1_2	.\Common\inc\LPC11xx.h	/^  __IO uint32_t JTAG_nTRST_PIO1_2;      \/*!< Offset: 0x080 I\/O configuration for pin nTRST\/PIO1_2\/AD3\/CT32B1_MAT1 (R\/W) *\/$/;"	m	struct:__anon15
+KEY_NONE	.\Common\inc\Key.h	13;"	d
+KEY_PROCESS_PRESS_CONFIRM	.\Common\inc\Key.h	/^KEY_PROCESS_PRESS_CONFIRM,$/;"	e	enum:__anon13
+KEY_PROCESS_PRESS_DETECT	.\Common\inc\Key.h	/^KEY_PROCESS_PRESS_DETECT,$/;"	e	enum:__anon13
+KEY_PROCESS_PRESS_SURE	.\Common\inc\Key.h	/^KEY_PROCESS_PRESS_SURE,$/;"	e	enum:__anon13
+KEY_PROCESS_RELEASE_CONFIRM	.\Common\inc\Key.h	/^KEY_PROCESS_RELEASE_CONFIRM,$/;"	e	enum:__anon13
+KEY_PROCESS_RELEASE_SURE	.\Common\inc\Key.h	/^KEY_PROCESS_RELEASE_SURE$/;"	e	enum:__anon13
+KeyBuf	.\Common\src\Key.c	/^volatile unsigned char  KeyBuf[KeyBufSize];                            \/\/串口数据缓存     $/;"	v
+KeyBufIndex	.\Common\src\Key.c	/^volatile unsigned char  KeyBufIndex = 0;$/;"	v
+KeyBufSize	.\Common\inc\Key.h	12;"	d
+KeyCnt	.\Common\src\Key.c	/^volatile unsigned char  KeyCnt;$/;"	v
+KeyInit	.\Common\src\Key.c	/^void KeyInit(void)$/;"	f
+KeyScan	.\Common\src\Key.c	/^void KeyScan(void)$/;"	f
+KeyValuePop	.\Common\src\Key.c	/^unsigned char KeyValuePop(void)  $/;"	f
+KeyValuePush	.\Common\src\Key.c	/^void KeyValuePush(unsigned char keyValue)$/;"	f
+LCR	.\Common\inc\LPC11xx.h	/^  __IO uint32_t  LCR;                   \/*!< Offset: 0x00C Line Control Register (R\/W) *\/$/;"	m	struct:__anon21
+LOAD	.\Common\inc\core_cm0.h	/^  __IO uint32_t LOAD;                         \/*!< SysTick Reload Value Register       *\/$/;"	m	struct:__anon11
+LOOPBACK_MODE	.\Common\inc\can.h	37;"	d
+LOOPBACK_MODE	.\Common\inc\ssp.h	21;"	d
+LOOPBACK_MODE	.\ssp.h	21;"	d
+LPC_ADC	.\Common\inc\LPC11xx.h	547;"	d
+LPC_ADC_BASE	.\Common\inc\LPC11xx.h	522;"	d
+LPC_ADC_TypeDef	.\Common\inc\LPC11xx.h	/^} LPC_ADC_TypeDef;$/;"	t	typeref:struct:__anon28
+LPC_AHB_BASE	.\Common\inc\LPC11xx.h	512;"	d
+LPC_APB0_BASE	.\Common\inc\LPC11xx.h	511;"	d
+LPC_CAN	.\Common\inc\LPC11xx.h	551;"	d
+LPC_CAN_BASE	.\Common\inc\LPC11xx.h	527;"	d
+LPC_CAN_TypeDef	.\Common\inc\LPC11xx.h	/^} LPC_CAN_TypeDef;$/;"	t	typeref:struct:__anon29
+LPC_CT16B0_BASE	.\Common\inc\LPC11xx.h	518;"	d
+LPC_CT16B1_BASE	.\Common\inc\LPC11xx.h	519;"	d
+LPC_CT32B0_BASE	.\Common\inc\LPC11xx.h	520;"	d
+LPC_CT32B1_BASE	.\Common\inc\LPC11xx.h	521;"	d
+LPC_FLASH_BASE	.\Common\inc\LPC11xx.h	509;"	d
+LPC_GPIO0	.\Common\inc\LPC11xx.h	554;"	d
+LPC_GPIO0_BASE	.\Common\inc\LPC11xx.h	532;"	d
+LPC_GPIO1	.\Common\inc\LPC11xx.h	555;"	d
+LPC_GPIO1_BASE	.\Common\inc\LPC11xx.h	533;"	d
+LPC_GPIO2	.\Common\inc\LPC11xx.h	556;"	d
+LPC_GPIO2_BASE	.\Common\inc\LPC11xx.h	534;"	d
+LPC_GPIO3	.\Common\inc\LPC11xx.h	557;"	d
+LPC_GPIO3_BASE	.\Common\inc\LPC11xx.h	535;"	d
+LPC_GPIO_BASE	.\Common\inc\LPC11xx.h	531;"	d
+LPC_GPIO_TypeDef	.\Common\inc\LPC11xx.h	/^} LPC_GPIO_TypeDef;$/;"	t	typeref:struct:__anon17
+LPC_I2C	.\Common\inc\LPC11xx.h	540;"	d
+LPC_I2C_BASE	.\Common\inc\LPC11xx.h	515;"	d
+LPC_I2C_TypeDef	.\Common\inc\LPC11xx.h	/^} LPC_I2C_TypeDef;$/;"	t	typeref:struct:__anon26
+LPC_IOCON	.\Common\inc\LPC11xx.h	552;"	d
+LPC_IOCON_BASE	.\Common\inc\LPC11xx.h	525;"	d
+LPC_IOCON_TypeDef	.\Common\inc\LPC11xx.h	/^} LPC_IOCON_TypeDef;$/;"	t	typeref:struct:__anon15
+LPC_PMU	.\Common\inc\LPC11xx.h	548;"	d
+LPC_PMU_BASE	.\Common\inc\LPC11xx.h	523;"	d
+LPC_PMU_TypeDef	.\Common\inc\LPC11xx.h	/^} LPC_PMU_TypeDef;$/;"	t	typeref:struct:__anon16
+LPC_RAM_BASE	.\Common\inc\LPC11xx.h	510;"	d
+LPC_SSP0	.\Common\inc\LPC11xx.h	549;"	d
+LPC_SSP0_BASE	.\Common\inc\LPC11xx.h	524;"	d
+LPC_SSP1	.\Common\inc\LPC11xx.h	550;"	d
+LPC_SSP1_BASE	.\Common\inc\LPC11xx.h	528;"	d
+LPC_SSP_TypeDef	.\Common\inc\LPC11xx.h	/^} LPC_SSP_TypeDef;$/;"	t	typeref:struct:__anon25
+LPC_SYSCON	.\Common\inc\LPC11xx.h	553;"	d
+LPC_SYSCON_BASE	.\Common\inc\LPC11xx.h	526;"	d
+LPC_SYSCON_TypeDef	.\Common\inc\LPC11xx.h	/^} LPC_SYSCON_TypeDef;$/;"	t	typeref:struct:__anon14
+LPC_TMR16B0	.\Common\inc\LPC11xx.h	543;"	d
+LPC_TMR16B1	.\Common\inc\LPC11xx.h	544;"	d
+LPC_TMR32B0	.\Common\inc\LPC11xx.h	545;"	d
+LPC_TMR32B1	.\Common\inc\LPC11xx.h	546;"	d
+LPC_TMR_TypeDef	.\Common\inc\LPC11xx.h	/^} LPC_TMR_TypeDef;$/;"	t	typeref:struct:__anon20
+LPC_UART	.\Common\inc\LPC11xx.h	542;"	d
+LPC_UART_BASE	.\Common\inc\LPC11xx.h	517;"	d
+LPC_UART_TypeDef	.\Common\inc\LPC11xx.h	/^} LPC_UART_TypeDef;$/;"	t	typeref:struct:__anon21
+LPC_WDT	.\Common\inc\LPC11xx.h	541;"	d
+LPC_WDT_BASE	.\Common\inc\LPC11xx.h	516;"	d
+LPC_WDT_TypeDef	.\Common\inc\LPC11xx.h	/^} LPC_WDT_TypeDef;$/;"	t	typeref:struct:__anon27
+LP_REGUL_PD	.\Common\inc\pmu.h	36;"	d
+LSR	.\Common\inc\LPC11xx.h	/^  __I  uint32_t  LSR;                   \/*!< Offset: 0x014 Line Status Register (R\/ ) *\/$/;"	m	struct:__anon21
+LSR_BI	.\Common\inc\uart.h	33;"	d
+LSR_FE	.\Common\inc\uart.h	32;"	d
+LSR_OE	.\Common\inc\uart.h	30;"	d
+LSR_PE	.\Common\inc\uart.h	31;"	d
+LSR_RDR	.\Common\inc\uart.h	29;"	d
+LSR_RXFE	.\Common\inc\uart.h	36;"	d
+LSR_TEMT	.\Common\inc\uart.h	35;"	d
+LSR_THRE	.\Common\inc\uart.h	34;"	d
+LeftTimer	.\Common\src\timerman.c	/^uint32_t LeftTimer(uint32_t tmrid)$/;"	f
+MAINCLKSEL	.\Common\inc\LPC11xx.h	/^  __IO uint32_t MAINCLKSEL;             \/*!< Offset: 0x070 Main clock source select (R\/W) *\/$/;"	m	struct:__anon14
+MAINCLKUEN	.\Common\inc\LPC11xx.h	/^  __IO uint32_t MAINCLKUEN;             \/*!< Offset: 0x074 Main clock source update enable (R\/W) *\/$/;"	m	struct:__anon14
+MAINREGVOUT0CFG	.\Common\inc\LPC11xx.h	/^  __IO uint32_t MAINREGVOUT0CFG;        \/*!< Offset: 0x160 Main Regulator Voltage 0 Configuration *\/ $/;"	m	struct:__anon14
+MAINREGVOUT1CFG	.\Common\inc\LPC11xx.h	/^  __IO uint32_t MAINREGVOUT1CFG;        \/*!< Offset: 0x164 Main Regulator Voltage 1 Configuration *\/$/;"	m	struct:__anon14
+MAIN_CLKSRCSEL_Val	.\Common\src\system_LPC11xx.c	74;"	d	file:
+MAIN_PLL_M_Val	.\Common\src\system_LPC11xx.c	75;"	d	file:
+MAIN_PLL_P_Val	.\Common\src\system_LPC11xx.c	76;"	d	file:
+MAIN_PLL_SETUP	.\Common\src\system_LPC11xx.c	73;"	d	file:
+MAIN_REGUL_PD	.\Common\inc\pmu.h	34;"	d
+MASK	.\Common\inc\can.h	133;"	d
+MASK0	.\Common\inc\LPC11xx.h	/^  __IO uint32_t MASK0;                  \/*!< Offset: 0x030 I2C Slave address mask register 0 (R\/W) *\/$/;"	m	struct:__anon26
+MASK1	.\Common\inc\LPC11xx.h	/^  __IO uint32_t MASK1;                  \/*!< Offset: 0x034 I2C Slave address mask register 1 (R\/W) *\/$/;"	m	struct:__anon26
+MASK2	.\Common\inc\LPC11xx.h	/^  __IO uint32_t MASK2;                  \/*!< Offset: 0x038 I2C Slave address mask register 2 (R\/W) *\/$/;"	m	struct:__anon26
+MASK3	.\Common\inc\LPC11xx.h	/^  __IO uint32_t MASK3;                  \/*!< Offset: 0x03C I2C Slave address mask register 3 (R\/W) *\/$/;"	m	struct:__anon26
+MASKED_ACCESS	.\Common\inc\LPC11xx.h	/^    __IO uint32_t MASKED_ACCESS[4096];  \/*!< Offset: 0x0000 to 0x3FFC Port data Register for pins PIOn_0 to PIOn_11 (R\/W) *\/$/;"	m	union:__anon17::__anon18
+MASK_MDIR	.\Common\inc\can.h	139;"	d
+MASK_MXTD	.\Common\inc\can.h	138;"	d
+MATCH0	.\Common\inc\timer16.h	23;"	d
+MATCH0	.\Common\inc\timer32.h	22;"	d
+MATCH1	.\Common\inc\timer16.h	24;"	d
+MATCH1	.\Common\inc\timer32.h	23;"	d
+MATCH2	.\Common\inc\timer16.h	25;"	d
+MATCH2	.\Common\inc\timer32.h	24;"	d
+MATCH3	.\Common\inc\timer16.h	26;"	d
+MATCH3	.\Common\inc\timer32.h	25;"	d
+MAX_TIMEOUT	.\Common\inc\i2c.h	20;"	d
+MAX_TIMEOUT	.\Common\inc\ssp.h	38;"	d
+MAX_TIMEOUT	.\ssp.h	39;"	d
+MAX_TMR	.\Common\inc\timerman.h	13;"	d
+MCR	.\Common\inc\LPC11xx.h	/^  __IO uint32_t  MCR;                   \/*!< Offset: 0x010 Modem control Register (R\/W) *\/$/;"	m	struct:__anon21
+MCR	.\Common\inc\LPC11xx.h	/^  __IO uint32_t MCR;                    \/*!< Offset: 0x014 Match Control Register (R\/W) *\/$/;"	m	struct:__anon20
+MCU_DEEP_SLEEP	.\Common\inc\pmu.h	17;"	d
+MCU_SLEEP	.\Common\inc\pmu.h	16;"	d
+MIS	.\Common\inc\LPC11xx.h	/^  __IO uint32_t MIS;                    \/*!< Offset: 0x01C Masked Interrupt Status Register (R\/W) *\/$/;"	m	struct:__anon25
+MIS	.\Common\inc\LPC11xx.h	/^  __IO uint32_t MIS;                    \/*!< Offset: 0x8018 Masked interrupt status Register (R\/ ) *\/$/;"	m	struct:__anon17
+MLST	.\Common\inc\can.h	148;"	d
+MMCTRL	.\Common\inc\LPC11xx.h	/^  __IO uint32_t MMCTRL;                 \/*!< Offset: 0x01C Monitor mode control register (R\/W) *\/$/;"	m	struct:__anon26
+MOD	.\Common\inc\LPC11xx.h	/^  __IO uint32_t MOD;                    \/*!< Offset: 0x000 Watchdog mode register (R\/W) *\/$/;"	m	struct:__anon27
+MODEM_TEST	.\Common\inc\uart.h	17;"	d
+MOTOR_CCW	.\Common\inc\stepmotor.h	15;"	d
+MOTOR_CCW	.\stepmotor.h	15;"	d
+MOTOR_CW	.\Common\inc\stepmotor.h	14;"	d
+MOTOR_CW	.\stepmotor.h	14;"	d
+MOTOR_STOP	.\stepmotor.h	16;"	d
+MR0	.\Common\inc\LPC11xx.h	/^  __IO uint32_t MR0;                    \/*!< Offset: 0x018 Match Register 0 (R\/W) *\/$/;"	m	struct:__anon20
+MR1	.\Common\inc\LPC11xx.h	/^  __IO uint32_t MR1;                    \/*!< Offset: 0x01C Match Register 1 (R\/W) *\/$/;"	m	struct:__anon20
+MR2	.\Common\inc\LPC11xx.h	/^  __IO uint32_t MR2;                    \/*!< Offset: 0x020 Match Register 2 (R\/W) *\/$/;"	m	struct:__anon20
+MR3	.\Common\inc\LPC11xx.h	/^  __IO uint32_t MR3;                    \/*!< Offset: 0x024 Match Register 3 (R\/W) *\/$/;"	m	struct:__anon20
+MSGV1	.\Common\inc\LPC11xx.h	/^  __I  uint32_t MSGV1;				\/* 0x160 *\/$/;"	m	struct:__anon29
+MSGV2	.\Common\inc\LPC11xx.h	/^  __I  uint32_t MSGV2;$/;"	m	struct:__anon29
+MSG_OBJ_MAX	.\Common\inc\can.h	55;"	d
+MSG_OBJ_MAX	.\Common\inc\can_api.h	35;"	d
+MSR	.\Common\inc\LPC11xx.h	/^  __I  uint32_t  MSR;                   \/*!< Offset: 0x018 Modem status Register (R\/ ) *\/$/;"	m	struct:__anon21
+Main_PLL_Setup	.\Common\src\system_LPC11xx.c	/^void Main_PLL_Setup ( void )$/;"	f
+MemManage_Handler	.\Common\src\cstartup_M.s	/^MemManage_Handler:$/;"	l
+ModemInit	.\Common\src\uart.c	/^void ModemInit( void )$/;"	f
+ND1	.\Common\inc\LPC11xx.h	/^  __I  uint32_t ND1;				\/* 0x120 *\/$/;"	m	struct:__anon29
+ND2	.\Common\inc\LPC11xx.h	/^  __I  uint32_t ND2;$/;"	m	struct:__anon29
+NEWD	.\Common\inc\can.h	147;"	d
+NMI_Handler	.\Common\src\cstartup_M.s	/^NMI_Handler:$/;"	l
+NULL	.\Common\inc\type.h	16;"	d
+NUM_ADC	.\lpc_control.c	27;"	d	file:
+NUM_OF_WAKESOURCE	.\Common\inc\pmu.h	24;"	d
+NVIC	.\Common\inc\core_cm0.h	144;"	d
+NVIC_AIRCR_ENDIANESS	.\Common\inc\core_cm0.h	76;"	d
+NVIC_AIRCR_VECTKEY	.\Common\inc\core_cm0.h	75;"	d
+NVIC_BASE	.\Common\inc\core_cm0.h	139;"	d
+NVIC_ClearPendingIRQ	.\Common\inc\core_cm0.h	/^static __INLINE void NVIC_ClearPendingIRQ(IRQn_Type IRQn)$/;"	f
+NVIC_DisableIRQ	.\Common\inc\core_cm0.h	/^static __INLINE void NVIC_DisableIRQ(IRQn_Type IRQn)$/;"	f
+NVIC_EnableIRQ	.\Common\inc\core_cm0.h	/^static __INLINE void NVIC_EnableIRQ(IRQn_Type IRQn)$/;"	f
+NVIC_GetPendingIRQ	.\Common\inc\core_cm0.h	/^static __INLINE uint32_t NVIC_GetPendingIRQ(IRQn_Type IRQn)$/;"	f
+NVIC_GetPriority	.\Common\inc\core_cm0.h	/^static __INLINE uint32_t NVIC_GetPriority(IRQn_Type IRQn)$/;"	f
+NVIC_LP_SEVONPEND	.\Common\inc\pmu.h	20;"	d
+NVIC_LP_SLEEPDEEP	.\Common\inc\pmu.h	21;"	d
+NVIC_LP_SLEEPONEXIT	.\Common\inc\pmu.h	22;"	d
+NVIC_SYSRESETREQ	.\Common\inc\core_cm0.h	74;"	d
+NVIC_SetPendingIRQ	.\Common\inc\core_cm0.h	/^static __INLINE void NVIC_SetPendingIRQ(IRQn_Type IRQn)$/;"	f
+NVIC_SetPriority	.\Common\inc\core_cm0.h	/^static __INLINE void NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)$/;"	f
+NVIC_SystemReset	.\Common\inc\core_cm0.h	/^static __INLINE void NVIC_SystemReset(void)$/;"	f
+NVIC_Type	.\Common\inc\core_cm0.h	/^}  NVIC_Type;$/;"	t	typeref:struct:__anon9
+NVIC_VECTRESET	.\Common\inc\core_cm0.h	73;"	d
+NVIC_VectTab_FLASH	.\Common\inc\system_LPC11xx.h	29;"	d
+NVIC_VectTab_RAM	.\Common\inc\system_LPC11xx.h	28;"	d
+NonMaskableInt_IRQn	.\Common\inc\LPC11xx.h	/^  NonMaskableInt_IRQn           = -14,    \/*!< 2 Non Maskable Interrupt                           *\/$/;"	e	enum:IRQn
+OSC_CLK	.\Common\src\system_LPC11xx.c	91;"	d	file:
+PC	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PC;                     \/*!< Offset: 0x010 Prescale Counter Register (R\/W) *\/$/;"	m	struct:__anon20
+PCF8594_ADDR	.\Common\inc\i2c.h	25;"	d
+PCON	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PCON;                   \/*!< Offset: 0x000 Power control Register (R\/W) *\/$/;"	m	struct:__anon16
+PDAWAKECFG	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PDAWAKECFG;             \/*!< Offset: 0x234 Power-down states after wake-up (R\/W) *\/        $/;"	m	struct:__anon14
+PDRUNCFG	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PDRUNCFG;               \/*!< Offset: 0x238 Power-down configuration Register (R\/W) *\/$/;"	m	struct:__anon14
+PDSLEEPCFG	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PDSLEEPCFG;             \/*!< Offset: 0x230 Power-down states in Deep-sleep mode (R\/W) *\/$/;"	m	struct:__anon14
+PERTICK	.\Common\inc\timerman.h	15;"	d
+PIO0_1	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO0_1;                 \/*!< Offset: 0x010 I\/O configuration for pin PIO0_1\/CLKOUT\/CT32B0_MAT2 (R\/W) *\/$/;"	m	struct:__anon15
+PIO0_2	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO0_2;                 \/*!< Offset: 0x01C I\/O configuration for pin PIO0_2\/SSEL0\/CT16B0_CAP0 (R\/W) *\/$/;"	m	struct:__anon15
+PIO0_3	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO0_3;                 \/*!< Offset: 0x02C I\/O configuration for pin PIO0_3 (R\/W) *\/$/;"	m	struct:__anon15
+PIO0_4	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO0_4;                 \/*!< Offset: 0x030 I\/O configuration for pin PIO0_4\/SCL (R\/W) *\/$/;"	m	struct:__anon15
+PIO0_5	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO0_5;                 \/*!< Offset: 0x034 I\/O configuration for pin PIO0_5\/SDA (R\/W) *\/$/;"	m	struct:__anon15
+PIO0_6	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO0_6;                 \/*!< Offset: 0x04C I\/O configuration for pin PIO0_6\/SCK0 (R\/W) *\/$/;"	m	struct:__anon15
+PIO0_7	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO0_7;                 \/*!< Offset: 0x050 I\/O configuration for pin PIO0_7\/nCTS (R\/W) *\/$/;"	m	struct:__anon15
+PIO0_8	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO0_8;                 \/*!< Offset: 0x060 I\/O configuration for pin PIO0_8\/MISO0\/CT16B0_MAT0 (R\/W) *\/$/;"	m	struct:__anon15
+PIO0_9	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO0_9;                 \/*!< Offset: 0x064 I\/O configuration for pin PIO0_9\/MOSI0\/CT16B0_MAT1 (R\/W) *\/$/;"	m	struct:__anon15
+PIO1_10	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO1_10;                \/*!< Offset: 0x06C I\/O configuration for pin PIO1_10\/AD6\/CT16B1_MAT1 (R\/W) *\/$/;"	m	struct:__anon15
+PIO1_11	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO1_11;                \/*!< Offset: 0x098 I\/O configuration for pin PIO1_11\/AD7 (R\/W) *\/$/;"	m	struct:__anon15
+PIO1_4	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO1_4;                 \/*!< Offset: 0x094 I\/O configuration for pin PIO1_4\/AD5\/CT32B1_MAT3 (R\/W) *\/$/;"	m	struct:__anon15
+PIO1_5	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO1_5;                 \/*!< Offset: 0x0A0 I\/O configuration for pin PIO1_5\/nRTS\/CT32B0_CAP0 (R\/W) *\/$/;"	m	struct:__anon15
+PIO1_6	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO1_6;                 \/*!< Offset: 0x0A4 I\/O configuration for pin PIO1_6\/RXD\/CT32B0_MAT0 (R\/W) *\/$/;"	m	struct:__anon15
+PIO1_7	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO1_7;                 \/*!< Offset: 0x0A8 I\/O configuration for pin PIO1_7\/TXD\/CT32B0_MAT1 (R\/W) *\/$/;"	m	struct:__anon15
+PIO1_8	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO1_8;                 \/*!< Offset: 0x014 I\/O configuration for pin PIO1_8\/CT16B1_CAP0 (R\/W) *\/$/;"	m	struct:__anon15
+PIO1_9	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO1_9;                 \/*!< Offset: 0x038 I\/O configuration for pin PIO1_9\/CT16B1_MAT0 (R\/W) *\/$/;"	m	struct:__anon15
+PIO2_0	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO2_0;                 \/*!< Offset: 0x008 I\/O configuration for pin PIO2_0\/DTR\/SSEL1 (R\/W) *\/$/;"	m	struct:__anon15
+PIO2_1	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO2_1;                 \/*!< Offset: 0x028 I\/O configuration for pin PIO2_1\/nDSR\/SCK1 (R\/W) *\/$/;"	m	struct:__anon15
+PIO2_10	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO2_10;                \/*!< Offset: 0x058 I\/O configuration for pin PIO2_10 (R\/W) *\/$/;"	m	struct:__anon15
+PIO2_11	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO2_11;                \/*!< Offset: 0x070 I\/O configuration for pin PIO2_11\/SCK0 (R\/W) *\/$/;"	m	struct:__anon15
+PIO2_2	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO2_2;                 \/*!< Offset: 0x05C I\/O configuration for pin PIO2_2\/DCD\/MISO1 (R\/W) *\/$/;"	m	struct:__anon15
+PIO2_3	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO2_3;                 \/*!< Offset: 0x08C I\/O configuration for pin PIO2_3\/RI\/MOSI1 (R\/W) *\/$/;"	m	struct:__anon15
+PIO2_4	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO2_4;                 \/*!< Offset: 0x040 I\/O configuration for pin PIO2_4 (R\/W) *\/$/;"	m	struct:__anon15
+PIO2_5	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO2_5;                 \/*!< Offset: 0x044 I\/O configuration for pin PIO2_5 (R\/W) *\/$/;"	m	struct:__anon15
+PIO2_6	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO2_6;                 \/*!< Offset: 0x000 I\/O configuration for pin PIO2_6 (R\/W) *\/$/;"	m	struct:__anon15
+PIO2_7	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO2_7;                 \/*!< Offset: 0x020 I\/O configuration for pin PIO2_7 (R\/W) *\/$/;"	m	struct:__anon15
+PIO2_8	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO2_8;                 \/*!< Offset: 0x024 I\/O configuration for pin PIO2_8 (R\/W) *\/$/;"	m	struct:__anon15
+PIO2_9	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO2_9;                 \/*!< Offset: 0x054 I\/O configuration for pin PIO2_9 (R\/W) *\/$/;"	m	struct:__anon15
+PIO3_0	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO3_0;                 \/*!< Offset: 0x084 I\/O configuration for pin PIO3_0\/nDTR (R\/W) *\/$/;"	m	struct:__anon15
+PIO3_1	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO3_1;                 \/*!< Offset: 0x088 I\/O configuration for pin PIO3_1\/nDSR (R\/W) *\/$/;"	m	struct:__anon15
+PIO3_2	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO3_2;                 \/*!< Offset: 0x09C I\/O configuration for pin PIO3_2\/nDCD (R\/W) *\/$/;"	m	struct:__anon15
+PIO3_3	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO3_3;                 \/*!< Offset: 0x0AC I\/O configuration for pin PIO3_3\/nRI (R\/W) *\/$/;"	m	struct:__anon15
+PIO3_4	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO3_4;                 \/*!< Offset: 0x03C I\/O configuration for pin PIO3_4 (R\/W) *\/$/;"	m	struct:__anon15
+PIO3_5	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIO3_5;                 \/*!< Offset: 0x048 I\/O configuration for pin PIO3_5 (R\/W) *\/$/;"	m	struct:__anon15
+PIOINT0_IRQHandler	.\Common\src\cstartup_M.s	/^PIOINT0_IRQHandler:$/;"	l
+PIOINT0_IRQHandler	.\Common\src\gpio.c	/^void PIOINT0_IRQHandler(void)$/;"	f
+PIOINT1_IRQHandler	.\Common\src\cstartup_M.s	/^PIOINT1_IRQHandler:$/;"	l
+PIOINT1_IRQHandler	.\Common\src\gpio.c	/^void PIOINT1_IRQHandler(void)$/;"	f
+PIOINT2_IRQHandler	.\Common\src\cstartup_M.s	/^PIOINT2_IRQHandler:$/;"	l
+PIOINT2_IRQHandler	.\Common\src\gpio.c	/^void PIOINT2_IRQHandler(void)$/;"	f
+PIOINT3_IRQHandler	.\Common\src\cstartup_M.s	/^PIOINT3_IRQHandler:$/;"	l
+PIOINT3_IRQHandler	.\Common\src\gpio.c	/^void PIOINT3_IRQHandler(void)$/;"	f
+PIOPORCAP0	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIOPORCAP0;             \/*!< Offset: 0x100 POR captured PIO status 0 (R\/ ) *\/           $/;"	m	struct:__anon14
+PIOPORCAP1	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PIOPORCAP1;             \/*!< Offset: 0x104 POR captured PIO status 1 (R\/ ) *\/   $/;"	m	struct:__anon14
+PMU_Init	.\Common\src\pmu.c	/^void PMU_Init( void )$/;"	f
+PMU_PowerDown	.\Common\src\pmu.c	/^void PMU_PowerDown( void )$/;"	f
+PMU_Sleep	.\Common\src\pmu.c	/^void PMU_Sleep( uint32_t SleepMode, uint32_t SleepCtrl )$/;"	f
+POLLING	.\Common\inc\can.h	36;"	d
+PORT0	.\Common\inc\gpio.h	14;"	d
+PORT1	.\Common\inc\gpio.h	15;"	d
+PORT2	.\Common\inc\gpio.h	16;"	d
+PORT3	.\Common\inc\gpio.h	17;"	d
+PR	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PR;                     \/*!< Offset: 0x00C Prescale Register (R\/W) *\/$/;"	m	struct:__anon20
+PRESETCTRL	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PRESETCTRL;             \/*!< Offset: 0x004 Peripheral reset control (R\/W) *\/$/;"	m	struct:__anon14
+PWMC	.\Common\inc\LPC11xx.h	/^  __IO uint32_t PWMC;                   \/*!< Offset: 0x074 PWM Control Register (R\/W) *\/$/;"	m	struct:__anon20
+PendSV_Handler	.\Common\src\cstartup_M.s	/^PendSV_Handler:$/;"	l
+PendSV_IRQn	.\Common\inc\LPC11xx.h	/^  PendSV_IRQn                   = -2,     \/*!< 14 Cortex-M0 Pend SV Interrupt                     *\/$/;"	e	enum:IRQn
+PollUart	.\Common\src\uart.c	/^char PollUart(char * pc)$/;"	f
+RBR	.\Common\inc\LPC11xx.h	/^  __I  uint32_t  RBR;                   \/*!< Offset: 0x000 Receiver Buffer  Register (R\/ ) *\/$/;"	m	union:__anon21::__anon22
+RD	.\Common\inc\can.h	135;"	d
+RDSR	.\Common\inc\ssp.h	88;"	d
+RDSR	.\ssp.h	89;"	d
+RDSR_RDY	.\Common\inc\ssp.h	94;"	d
+RDSR_RDY	.\ssp.h	95;"	d
+RDSR_WEN	.\Common\inc\ssp.h	95;"	d
+RDSR_WEN	.\ssp.h	96;"	d
+RD_BIT	.\Common\inc\i2c.h	28;"	d
+READ	.\Common\inc\ssp.h	90;"	d
+READ	.\ssp.h	91;"	d
+READ_WRITE	.\Common\inc\i2c.h	26;"	d
+RESERVED0	.\Common\inc\LPC11xx.h	/^         uint32_t RESERVED0[4095];$/;"	m	struct:__anon17::__anon18::__anon19
+RESERVED0	.\Common\inc\LPC11xx.h	/^       uint32_t  RESERVED0;$/;"	m	struct:__anon21
+RESERVED0	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED0;$/;"	m	struct:__anon28
+RESERVED0	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED0;$/;"	m	struct:__anon29
+RESERVED0	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED0[1];$/;"	m	struct:__anon15
+RESERVED0	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED0[4];$/;"	m	struct:__anon14
+RESERVED0	.\Common\inc\core_cm0.h	/^       uint32_t RESERVED0;$/;"	m	struct:__anon10
+RESERVED0	.\Common\inc\core_cm0.h	/^       uint32_t RESERVED0[31];$/;"	m	struct:__anon9
+RESERVED1	.\Common\inc\LPC11xx.h	/^       uint32_t  RESERVED1;$/;"	m	struct:__anon21
+RESERVED1	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED1[13];   $/;"	m	struct:__anon29
+RESERVED1	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED1[1];$/;"	m	struct:__anon14
+RESERVED1	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED1[1];$/;"	m	struct:__anon15
+RESERVED1	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED1[3];$/;"	m	struct:__anon20
+RESERVED1	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED1[4096];$/;"	m	struct:__anon17
+RESERVED1	.\Common\inc\core_cm0.h	/^       uint32_t RESERVED1;$/;"	m	struct:__anon10
+RESERVED10	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED10[18];$/;"	m	struct:__anon14
+RESERVED11	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED11[1];$/;"	m	struct:__anon14
+RESERVED12	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED12;$/;"	m	struct:__anon14
+RESERVED13	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED13[38];$/;"	m	struct:__anon14
+RESERVED14	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED14[8];$/;"	m	struct:__anon14
+RESERVED15	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED15[101];$/;"	m	struct:__anon14
+RESERVED16	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED16[8];$/;"	m	struct:__anon14
+RESERVED2	.\Common\inc\LPC11xx.h	/^	   uint32_t RESERVED2[21];$/;"	m	struct:__anon29
+RESERVED2	.\Common\inc\LPC11xx.h	/^       uint32_t  RESERVED2[6];$/;"	m	struct:__anon21
+RESERVED2	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED2[12];$/;"	m	struct:__anon20
+RESERVED2	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED2[3];$/;"	m	struct:__anon14
+RESERVED2	.\Common\inc\core_cm0.h	/^       uint32_t RESERVED2[2];$/;"	m	struct:__anon10
+RESERVED2	.\Common\inc\core_cm0.h	/^       uint32_t RESERVED2[31];$/;"	m	struct:__anon9
+RESERVED3	.\Common\inc\LPC11xx.h	/^	   uint32_t RESERVED3[6];$/;"	m	struct:__anon29
+RESERVED3	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED3[10];$/;"	m	struct:__anon14
+RESERVED3	.\Common\inc\core_cm0.h	/^       uint32_t RESERVED3[31];$/;"	m	struct:__anon9
+RESERVED4	.\Common\inc\LPC11xx.h	/^	   uint32_t RESERVED4[6];$/;"	m	struct:__anon29
+RESERVED4	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED4[1];$/;"	m	struct:__anon14
+RESERVED4	.\Common\inc\core_cm0.h	/^       uint32_t RESERVED4[64];$/;"	m	struct:__anon9
+RESERVED5	.\Common\inc\LPC11xx.h	/^	   uint32_t RESERVED5[6];$/;"	m	struct:__anon29
+RESERVED5	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED5[4];$/;"	m	struct:__anon14
+RESERVED6	.\Common\inc\LPC11xx.h	/^	   uint32_t RESERVED6[6];$/;"	m	struct:__anon29
+RESERVED6	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED6[4];$/;"	m	struct:__anon14
+RESERVED7	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED7[7];$/;"	m	struct:__anon14
+RESERVED8	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED8[1];              $/;"	m	struct:__anon14
+RESERVED9	.\Common\inc\LPC11xx.h	/^       uint32_t RESERVED9[5];$/;"	m	struct:__anon14
+RESET_PIO0_0	.\Common\inc\LPC11xx.h	/^  __IO uint32_t RESET_PIO0_0;           \/*!< Offset: 0x00C I\/O configuration for pin RESET\/PIO0_0  (R\/W) *\/$/;"	m	struct:__anon15
+RIS	.\Common\inc\LPC11xx.h	/^  __IO uint32_t RIS;                    \/*!< Offset: 0x018 Raw Interrupt Status Register (R\/W) *\/$/;"	m	struct:__anon25
+RIS	.\Common\inc\LPC11xx.h	/^  __IO uint32_t RIS;                    \/*!< Offset: 0x8014 Raw interrupt status Register (R\/ ) *\/$/;"	m	struct:__anon17
+RI_LOC	.\Common\inc\LPC11xx.h	/^  __IO uint32_t RI_LOC;                 \/*!< Offset: 0x0BC RI pin location Register (R\/W) *\/$/;"	m	struct:__anon15
+ROEN	.\Common\inc\can.h	153;"	d
+RS485CTRL	.\Common\inc\LPC11xx.h	/^  __IO uint32_t  RS485CTRL;             \/*!< Offset: 0x04C RS-485\/EIA-485 Control Register (R\/W) *\/$/;"	m	struct:__anon21
+RS485DLY	.\Common\inc\LPC11xx.h	/^  __IO uint32_t  RS485DLY;              \/*!< Offset: 0x054 RS-485\/EIA-485 direction control delay Register (R\/W) *\/$/;"	m	struct:__anon21
+RS485_AADEN	.\Common\inc\uart.h	43;"	d
+RS485_DCTRL	.\Common\inc\uart.h	45;"	d
+RS485_ENABLED	.\Common\inc\uart.h	15;"	d
+RS485_NMMEN	.\Common\inc\uart.h	41;"	d
+RS485_OINV	.\Common\inc\uart.h	46;"	d
+RS485_RXDIS	.\Common\inc\uart.h	42;"	d
+RS485_SEL	.\Common\inc\uart.h	44;"	d
+RSERVED1	.\Common\inc\core_cm0.h	/^       uint32_t RSERVED1[31];$/;"	m	struct:__anon9
+RXIE	.\Common\inc\can.h	152;"	d
+RX_EXT_MSG_ID	.\Common\inc\can.h	59;"	d
+RX_MSG_ID	.\Common\inc\can.h	58;"	d
+RdIndex	.\Common\src\i2c.c	/^volatile uint32_t RdIndex = 0;$/;"	v
+ReadKeyValue	.\Common\src\Key.c	/^unsigned char ReadKeyValue(void)$/;"	f
+RemoveTimer	.\Common\src\timerman.c	/^void RemoveTimer(uint32_t tmrid)$/;"	f
+SCB	.\Common\inc\core_cm0.h	142;"	d
+SCB_BASE	.\Common\inc\core_cm0.h	140;"	d
+SCB_Type	.\Common\inc\core_cm0.h	/^} SCB_Type;$/;"	t	typeref:struct:__anon10
+SCK_LOC	.\Common\inc\LPC11xx.h	/^  __IO uint32_t SCK_LOC;                \/*!< Offset: 0x0B0 SCK pin location select Register (R\/W) *\/$/;"	m	struct:__anon15
+SCLH	.\Common\inc\LPC11xx.h	/^  __IO uint32_t SCLH;                   \/*!< Offset: 0x010 SCH Duty Cycle Register High Half Word (R\/W) *\/$/;"	m	struct:__anon26
+SCLL	.\Common\inc\LPC11xx.h	/^  __IO uint32_t SCLL;                   \/*!< Offset: 0x014 SCL Duty Cycle Register Low Half Word (R\/W) *\/$/;"	m	struct:__anon26
+SCR	.\Common\inc\LPC11xx.h	/^  __IO uint32_t  SCR;                   \/*!< Offset: 0x01C Scratch Pad Register (R\/W) *\/$/;"	m	struct:__anon21
+SCR	.\Common\inc\core_cm0.h	/^  __IO uint32_t SCR;                          \/*!< System Control Register                                  *\/$/;"	m	struct:__anon10
+SCS_BASE	.\Common\inc\core_cm0.h	136;"	d
+SECTOR_NOT_BLANK	.\Common\src\iap.c	37;"	d	file:
+SECTOR_NOT_PREPARED_FOR_WRITE_OPERATION	.\Common\src\iap.c	38;"	d	file:
+SHCSR	.\Common\inc\core_cm0.h	/^  __IO uint32_t SHCSR;                        \/*!< System Handler Control and State Register                *\/$/;"	m	struct:__anon10
+SHP	.\Common\inc\core_cm0.h	/^  __IO uint32_t SHP[2];                       \/*!< System Handlers Priority Registers. [0] is RESERVED      *\/$/;"	m	struct:__anon10
+SR	.\Common\inc\LPC11xx.h	/^  __I  uint32_t SR;                     \/*!< Offset: 0x00C Status Registe (R\/ ) *\/$/;"	m	struct:__anon25
+SRC_ADDR_ERROR	.\Common\src\iap.c	31;"	d	file:
+SRC_ADDR_NOT_MAPPED	.\Common\src\iap.c	33;"	d	file:
+SSP0CLKDIV	.\Common\inc\LPC11xx.h	/^  __IO uint32_t SSP0CLKDIV;             \/*!< Offset: 0x094 SSP0 clock divider (R\/W) *\/          $/;"	m	struct:__anon14
+SSP0_IRQHandler	.\Common\src\cstartup_M.s	/^SSP0_IRQHandler:$/;"	l
+SSP0_IRQHandler	.\Common\src\ssp.c	/^void SSP0_IRQHandler(void) $/;"	f
+SSP0_IRQHandler	.\ssp.c	/^void SSP0_IRQHandler(void) $/;"	f
+SSP0_IRQn	.\Common\inc\LPC11xx.h	/^  SSP0_IRQn                     = 20,       \/*!< SSP0 Interrupt                                   *\/$/;"	e	enum:IRQn
+SSP0_SEL	.\Common\inc\ssp.h	41;"	d
+SSP0_SEL	.\ssp.h	42;"	d
+SSP1CLKDIV	.\Common\inc\LPC11xx.h	/^  __IO uint32_t SSP1CLKDIV;             \/*!< Offset: 0x09C SSP1 clock divider (R\/W) *\/          $/;"	m	struct:__anon14
+SSP1_IRQHandler	.\Common\src\cstartup_M.s	/^SSP1_IRQHandler:$/;"	l
+SSP1_IRQHandler	.\Common\src\ssp.c	/^void SSP1_IRQHandler(void) $/;"	f
+SSP1_IRQHandler	.\ssp.c	/^void SSP1_IRQHandler(void) $/;"	f
+SSP1_IRQn	.\Common\inc\LPC11xx.h	/^  SSP1_IRQn                     = 14,       \/*!< SSP1 Interrupt                                   *\/$/;"	e	enum:IRQn
+SSPCR0_DSS	.\Common\inc\ssp.h	51;"	d
+SSPCR0_DSS	.\ssp.h	52;"	d
+SSPCR0_FRF	.\Common\inc\ssp.h	52;"	d
+SSPCR0_FRF	.\ssp.h	53;"	d
+SSPCR0_SCR	.\Common\inc\ssp.h	55;"	d
+SSPCR0_SCR	.\ssp.h	56;"	d
+SSPCR0_SPH	.\Common\inc\ssp.h	54;"	d
+SSPCR0_SPH	.\ssp.h	55;"	d
+SSPCR0_SPO	.\Common\inc\ssp.h	53;"	d
+SSPCR0_SPO	.\ssp.h	54;"	d
+SSPCR1_LBM	.\Common\inc\ssp.h	58;"	d
+SSPCR1_LBM	.\ssp.h	59;"	d
+SSPCR1_MS	.\Common\inc\ssp.h	60;"	d
+SSPCR1_MS	.\ssp.h	61;"	d
+SSPCR1_SOD	.\Common\inc\ssp.h	61;"	d
+SSPCR1_SOD	.\ssp.h	62;"	d
+SSPCR1_SSE	.\Common\inc\ssp.h	59;"	d
+SSPCR1_SSE	.\ssp.h	60;"	d
+SSPICR_RORIC	.\Common\inc\ssp.h	82;"	d
+SSPICR_RORIC	.\ssp.h	83;"	d
+SSPICR_RTIC	.\Common\inc\ssp.h	83;"	d
+SSPICR_RTIC	.\ssp.h	84;"	d
+SSPIMSC_RORIM	.\Common\inc\ssp.h	64;"	d
+SSPIMSC_RORIM	.\ssp.h	65;"	d
+SSPIMSC_RTIM	.\Common\inc\ssp.h	65;"	d
+SSPIMSC_RTIM	.\ssp.h	66;"	d
+SSPIMSC_RXIM	.\Common\inc\ssp.h	66;"	d
+SSPIMSC_RXIM	.\ssp.h	67;"	d
+SSPIMSC_TXIM	.\Common\inc\ssp.h	67;"	d
+SSPIMSC_TXIM	.\ssp.h	68;"	d
+SSPMIS_RORMIS	.\Common\inc\ssp.h	76;"	d
+SSPMIS_RORMIS	.\ssp.h	77;"	d
+SSPMIS_RTMIS	.\Common\inc\ssp.h	77;"	d
+SSPMIS_RTMIS	.\ssp.h	78;"	d
+SSPMIS_RXMIS	.\Common\inc\ssp.h	78;"	d
+SSPMIS_RXMIS	.\ssp.h	79;"	d
+SSPMIS_TXMIS	.\Common\inc\ssp.h	79;"	d
+SSPMIS_TXMIS	.\ssp.h	80;"	d
+SSPRIS_RORRIS	.\Common\inc\ssp.h	70;"	d
+SSPRIS_RORRIS	.\ssp.h	71;"	d
+SSPRIS_RTRIS	.\Common\inc\ssp.h	71;"	d
+SSPRIS_RTRIS	.\ssp.h	72;"	d
+SSPRIS_RXRIS	.\Common\inc\ssp.h	72;"	d
+SSPRIS_RXRIS	.\ssp.h	73;"	d
+SSPRIS_TXRIS	.\Common\inc\ssp.h	73;"	d
+SSPRIS_TXRIS	.\ssp.h	74;"	d
+SSPSR_BSY	.\Common\inc\ssp.h	48;"	d
+SSPSR_BSY	.\ssp.h	49;"	d
+SSPSR_RFF	.\Common\inc\ssp.h	47;"	d
+SSPSR_RFF	.\ssp.h	48;"	d
+SSPSR_RNE	.\Common\inc\ssp.h	46;"	d
+SSPSR_RNE	.\ssp.h	47;"	d
+SSPSR_TFE	.\Common\inc\ssp.h	44;"	d
+SSPSR_TFE	.\ssp.h	45;"	d
+SSPSR_TNF	.\Common\inc\ssp.h	45;"	d
+SSPSR_TNF	.\ssp.h	46;"	d
+SSP_BUFSIZE	.\Common\inc\ssp.h	34;"	d
+SSP_BUFSIZE	.\ssp.h	35;"	d
+SSP_DEBUG	.\ssp.h	32;"	d
+SSP_IOConfig	.\Common\src\ssp.c	/^void SSP_IOConfig( uint8_t portNum )$/;"	f
+SSP_IOConfig	.\ssp.c	/^void SSP_IOConfig( uint8_t portNum )$/;"	f
+SSP_Init	.\Common\src\ssp.c	/^void SSP_Init( uint8_t portNum )$/;"	f
+SSP_Init	.\ssp.c	/^void SSP_Init( uint8_t portNum )$/;"	f
+SSP_Receive	.\Common\src\ssp.c	/^void SSP_Receive( uint8_t portNum, uint8_t *buf, uint32_t Length )$/;"	f
+SSP_Receive	.\ssp.c	/^void SSP_Receive( uint8_t portNum, uint8_t *buf, uint32_t Length )$/;"	f
+SSP_SLAVE	.\Common\inc\ssp.h	22;"	d
+SSP_SLAVE	.\ssp.h	22;"	d
+SSP_Send	.\Common\src\ssp.c	/^void SSP_Send( uint8_t portNum, uint8_t *buf, uint32_t Length )$/;"	f
+SSP_Send	.\ssp.c	/^void SSP_Send( uint8_t portNum, uint8_t *buf, uint32_t Length )$/;"	f
+STARTAPRP0	.\Common\inc\LPC11xx.h	/^  __IO uint32_t STARTAPRP0;             \/*!< Offset: 0x200 Start logic edge control Register 0 (R\/W) *\/     $/;"	m	struct:__anon14
+STARTERP0	.\Common\inc\LPC11xx.h	/^  __IO uint32_t STARTERP0;              \/*!< Offset: 0x204 Start logic signal enable Register 0 (R\/W) *\/      $/;"	m	struct:__anon14
+STARTRSRP0CLR	.\Common\inc\LPC11xx.h	/^  __IO uint32_t STARTRSRP0CLR;          \/*!< Offset: 0x208 Start logic reset Register 0  ( \/W) *\/$/;"	m	struct:__anon14
+STARTSRP0	.\Common\inc\LPC11xx.h	/^  __IO uint32_t STARTSRP0;              \/*!< Offset: 0x20C Start logic status Register 0 (R\/W) *\/$/;"	m	struct:__anon14
+STAT	.\Common\inc\LPC11xx.h	/^  __I  uint32_t STAT;                   \/*!< Offset: 0x004 I2C Status Register (R\/ ) *\/$/;"	m	struct:__anon26
+STAT	.\Common\inc\LPC11xx.h	/^  __I  uint32_t STAT;                   \/*!< Offset: 0x030       A\/D Status Register (R\/ ) *\/$/;"	m	struct:__anon28
+STAT	.\Common\inc\LPC11xx.h	/^  __IO uint32_t STAT;$/;"	m	struct:__anon29
+STAT_BOFF	.\Common\inc\can.h	124;"	d
+STAT_EPASS	.\Common\inc\can.h	122;"	d
+STAT_EWARN	.\Common\inc\can.h	123;"	d
+STAT_LEC	.\Common\inc\can.h	119;"	d
+STAT_RXOK	.\Common\inc\can.h	121;"	d
+STAT_TXOK	.\Common\inc\can.h	120;"	d
+STEPMOTOR1_PIN	.\Common\inc\stepmotor.h	16;"	d
+STEPMOTOR1_PIN	.\stepmotor.h	17;"	d
+STEPMOTOR2_PIN	.\Common\inc\stepmotor.h	17;"	d
+STEPMOTOR2_PIN	.\stepmotor.h	18;"	d
+STEPMOTOR3_PIN	.\Common\inc\stepmotor.h	18;"	d
+STEPMOTOR3_PIN	.\stepmotor.h	19;"	d
+SVC_Handler	.\Common\src\cstartup_M.s	/^SVC_Handler:$/;"	l
+SVCall_IRQn	.\Common\inc\LPC11xx.h	/^  SVCall_IRQn                   = -5,     \/*!< 11 Cortex-M0 SV Call Interrupt                     *\/$/;"	e	enum:IRQn
+SYSAHBCLKCTRL	.\Common\inc\LPC11xx.h	/^  __IO uint32_t SYSAHBCLKCTRL;          \/*!< Offset: 0x080 System AHB clock control (R\/W) *\/$/;"	m	struct:__anon14
+SYSAHBCLKDIV	.\Common\inc\LPC11xx.h	/^  __IO uint32_t SYSAHBCLKDIV;           \/*!< Offset: 0x078 System AHB clock divider (R\/W) *\/$/;"	m	struct:__anon14
+SYSMEMREMAP	.\Common\inc\LPC11xx.h	/^  __IO uint32_t SYSMEMREMAP;            \/*!< Offset: 0x000 System memory remap (R\/W) *\/$/;"	m	struct:__anon14
+SYSOSCCTRL	.\Common\inc\LPC11xx.h	/^  __IO uint32_t SYSOSCCTRL;             \/*!< Offset: 0x020 System oscillator control (R\/W) *\/$/;"	m	struct:__anon14
+SYSPLLCLKSEL	.\Common\inc\LPC11xx.h	/^  __IO uint32_t SYSPLLCLKSEL;           \/*!< Offset: 0x040 System PLL clock source select (R\/W) *\/	$/;"	m	struct:__anon14
+SYSPLLCLKUEN	.\Common\inc\LPC11xx.h	/^  __IO uint32_t SYSPLLCLKUEN;           \/*!< Offset: 0x044 System PLL clock source update enable (R\/W) *\/$/;"	m	struct:__anon14
+SYSPLLCTRL	.\Common\inc\LPC11xx.h	/^  __IO uint32_t SYSPLLCTRL;             \/*!< Offset: 0x008 System PLL control (R\/W) *\/$/;"	m	struct:__anon14
+SYSPLLSTAT	.\Common\inc\LPC11xx.h	/^  __IO uint32_t SYSPLLSTAT;             \/*!< Offset: 0x00C System PLL status (R\/ ) *\/$/;"	m	struct:__anon14
+SYSRESSTAT	.\Common\inc\LPC11xx.h	/^  __IO uint32_t SYSRESSTAT;             \/*!< Offset: 0x030 System reset status Register (R\/ ) *\/$/;"	m	struct:__anon14
+SYSTCKCAL	.\Common\inc\LPC11xx.h	/^  __IO uint32_t SYSTCKCAL;              \/*!< Offset: 0x158 System tick counter calibration (R\/W) *\/$/;"	m	struct:__anon14
+SYSTICKCLKDIV	.\Common\inc\LPC11xx.h	/^  __IO uint32_t SYSTICKCLKDIV;          \/*!< Offset: 0x0B0 SYSTICK clock divider (R\/W) *\/          $/;"	m	struct:__anon14
+SYSTICK_CLKSOURCE	.\Common\inc\core_cm0.h	728;"	d
+SYSTICK_ENABLE	.\Common\inc\core_cm0.h	726;"	d
+SYSTICK_MAXCOUNT	.\Common\inc\core_cm0.h	729;"	d
+SYSTICK_TICKINT	.\Common\inc\core_cm0.h	727;"	d
+SYS_AHB_DIV_Val	.\Common\src\system_LPC11xx.c	77;"	d	file:
+SYS_OSC_PD	.\Common\inc\pmu.h	30;"	d
+SYS_PLL_PD	.\Common\inc\pmu.h	32;"	d
+StartTimer	.\Common\src\timerman.c	/^void StartTimer(uint32_t tmrid, uint32_t attrib,uint32_t interval)$/;"	f
+StepMotor_1	.\Common\inc\stepmotor.h	11;"	d
+StepMotor_1	.\stepmotor.h	11;"	d
+StepMotor_2	.\Common\inc\stepmotor.h	12;"	d
+StepMotor_2	.\stepmotor.h	12;"	d
+StepMotor_3	.\Common\inc\stepmotor.h	13;"	d
+StepMotor_3	.\stepmotor.h	13;"	d
+StepmotorMovePitch	.\Common\src\stepmotor.c	/^void StepmotorMovePitch(uint8_t stepNum, uint8_t StepDir)     \/\/步进机转动一个齿距$/;"	f
+StepmotorMovePitch	.\stepmotor.c	/^void StepmotorMovePitch(uint8_t stepNum, uint8_t StepDir)     \/\/步进机转动一个齿距$/;"	f
+StopTimer	.\Common\src\timerman.c	/^void StopTimer(uint32_t tmrid)$/;"	f
+SysTick	.\Common\inc\core_cm0.h	143;"	d
+SysTick_BASE	.\Common\inc\core_cm0.h	138;"	d
+SysTick_Config	.\Common\inc\core_cm0.h	/^static __INLINE uint32_t SysTick_Config(uint32_t ticks)$/;"	f
+SysTick_Handler	.\Common\src\cstartup_M.s	/^SysTick_Handler:$/;"	l
+SysTick_IRQn	.\Common\inc\LPC11xx.h	/^  SysTick_IRQn                  = -1,     \/*!< 15 Cortex-M0 System Tick Interrupt                 *\/$/;"	e	enum:IRQn
+SysTick_Type	.\Common\inc\core_cm0.h	/^} SysTick_Type;$/;"	t	typeref:struct:__anon11
+SystemAHBFrequency	.\Common\src\system_LPC11xx.c	/^uint32_t SystemAHBFrequency = IRC_OSC;$/;"	v
+SystemFrequency	.\Common\src\system_LPC11xx.c	/^uint32_t SystemFrequency = IRC_OSC; \/*!< System Clock Frequency (Core Clock)  *\/$/;"	v
+SystemInit	.\Common\src\system_LPC11xx.c	/^void SystemInit (void)$/;"	f
+TC	.\Common\inc\LPC11xx.h	/^  __IO uint32_t TC;                     \/*!< Offset: 0x004 Watchdog timer constant register (R\/W) *\/$/;"	m	struct:__anon27
+TC	.\Common\inc\LPC11xx.h	/^  __IO uint32_t TC;                     \/*!< Offset: 0x008 Timer Counter Register (R\/W) *\/$/;"	m	struct:__anon20
+TCR	.\Common\inc\LPC11xx.h	/^  __IO uint32_t TCR;                    \/*!< Offset: 0x004 Timer Control Register (R\/W) *\/$/;"	m	struct:__anon20
+TER	.\Common\inc\LPC11xx.h	/^  __IO uint32_t  TER;                   \/*!< Offset: 0x030 Transmit Enable Register (R\/W) *\/$/;"	m	struct:__anon21
+TEST	.\Common\inc\LPC11xx.h	/^  __IO uint32_t TEST;$/;"	m	struct:__anon29
+TEST_POWERDOWN	.\Common\inc\pmu.h	14;"	d
+THR	.\Common\inc\LPC11xx.h	/^  __O  uint32_t  THR;                   \/*!< Offset: 0x000 Transmit Holding Register ( \/W) *\/$/;"	m	union:__anon21::__anon22
+TICKS_MINUTE	.\Common\inc\timerman.h	17;"	d
+TICKS_SECOND	.\Common\inc\timerman.h	16;"	d
+TIMER0_FEED_FREQ	.\Common\inc\wdt.h	21;"	d
+TIMER_16_0_IRQn	.\Common\inc\LPC11xx.h	/^  TIMER_16_0_IRQn               = 16,       \/*!< 16-bit Timer0 Interrupt                          *\/$/;"	e	enum:IRQn
+TIMER_16_1_IRQn	.\Common\inc\LPC11xx.h	/^  TIMER_16_1_IRQn               = 17,       \/*!< 16-bit Timer1 Interrupt                          *\/$/;"	e	enum:IRQn
+TIMER_32_0_IRQn	.\Common\inc\LPC11xx.h	/^  TIMER_32_0_IRQn               = 18,       \/*!< 32-bit Timer0 Interrupt                          *\/$/;"	e	enum:IRQn
+TIMER_32_1_IRQn	.\Common\inc\LPC11xx.h	/^  TIMER_32_1_IRQn               = 19,       \/*!< 32-bit Timer1 Interrupt                          *\/$/;"	e	enum:IRQn
+TIMER_MATCH	.\Common\inc\timer16.h	15;"	d
+TIMER_MATCH	.\Common\inc\timer32.h	15;"	d
+TIMER_T	.\Common\src\timerman.c	/^} TIMER_T;$/;"	t	typeref:struct:__anon30	file:
+TIME_INTERVAL	.\Common\inc\timer16.h	30;"	d
+TIME_INTERVAL	.\Common\inc\timer32.h	27;"	d
+TRANSMIT_ONLY	.\Common\inc\can.h	35;"	d
+TREQ	.\Common\inc\can.h	129;"	d
+TRUE	.\Common\inc\type.h	24;"	d
+TV	.\Common\inc\LPC11xx.h	/^  __I  uint32_t TV;                     \/*!< Offset: 0x00C Watchdog timer value register (R\/ ) *\/$/;"	m	struct:__anon27
+TXIE	.\Common\inc\can.h	151;"	d
+TXREQ1	.\Common\inc\LPC11xx.h	/^  __I  uint32_t TXREQ1;				\/* 0x100 *\/$/;"	m	struct:__anon29
+TXREQ2	.\Common\inc\LPC11xx.h	/^  __I  uint32_t TXREQ2;$/;"	m	struct:__anon29
+TXRQ	.\Common\inc\can.h	154;"	d
+TX_EXT_MSG_ID	.\Common\inc\can.h	62;"	d
+TX_INTERRUPT	.\Common\inc\uart.h	16;"	d
+TX_MSG_ID	.\Common\inc\can.h	61;"	d
+TX_RX_ONLY	.\Common\inc\ssp.h	23;"	d
+TX_RX_ONLY	.\ssp.h	23;"	d
+TimerEntry	.\Common\src\timerman.c	/^void TimerEntry(void)$/;"	f
+TimerIsRun	.\Common\src\timerman.c	/^uint8_t TimerIsRun(uint32_t tmrid)$/;"	f
+UART0_IRQHandler	.\Common\src\cstartup_M.s	/^UART0_IRQHandler:$/;"	l
+UART0_IRQHandler	.\Common\src\uart.c	/^void UART0_IRQHandler(void)$/;"	f
+UARTBuffer	.\Common\src\uart.c	/^volatile uint8_t  UARTBuffer[BUFSIZE];$/;"	v
+UARTCLKDIV	.\Common\inc\LPC11xx.h	/^  __IO uint32_t UARTCLKDIV;             \/*!< Offset: 0x098 UART clock divider (R\/W) *\/$/;"	m	struct:__anon14
+UARTCount	.\Common\src\uart.c	/^volatile uint32_t UARTCount = 0;$/;"	v
+UARTInit	.\Common\src\uart.c	/^void UARTInit(uint32_t baudrate)$/;"	f
+UARTSend	.\Common\src\uart.c	/^void UARTSend(uint8_t *BufferPtr, uint32_t Length)$/;"	f
+UARTStatus	.\Common\src\uart.c	/^volatile uint32_t UARTStatus;$/;"	v
+UARTTxEmpty	.\Common\src\uart.c	/^volatile uint8_t  UARTTxEmpty = 1;$/;"	v
+UART_IRQn	.\Common\inc\LPC11xx.h	/^  UART_IRQn                     = 21,       \/*!< UART Interrupt                                   *\/$/;"	e	enum:IRQn
+UMSK	.\Common\inc\can.h	150;"	d
+USB_PHY_PD	.\Common\inc\pmu.h	35;"	d
+USB_PLL_PD	.\Common\inc\pmu.h	33;"	d
+USE_CS	.\Common\inc\ssp.h	31;"	d
+USE_CS	.\ssp.h	31;"	d
+USE_DEFAULT_BIT_TIMING	.\Common\inc\can.h	45;"	d
+USE_DEFAULT_BIT_TIMING	.\Common\inc\can_api.h	33;"	d
+UsageFault_Handler	.\Common\src\cstartup_M.s	/^UsageFault_Handler:$/;"	l
+VAL	.\Common\inc\core_cm0.h	/^  __IO uint32_t VAL;                          \/*!< SysTick Current Value Register      *\/$/;"	m	struct:__anon11
+VOUTCFGPROT	.\Common\inc\LPC11xx.h	/^  __O  uint32_t VOUTCFGPROT;            \/*!< Offset: 0x3D0 Voltage Output Configuration Protection Register (W) *\/$/;"	m	struct:__anon14
+W25X10DEBUG	.\w25x10.h	14;"	d
+W25X10_CS0	.\w25x10.c	/^void W25X10_CS0( void)$/;"	f
+W25X10_CS1	.\w25x10.c	/^void W25X10_CS1( void)$/;"	f
+W25X10_Erase	.\w25x10.c	/^uint8_t W25X10_Erase( void )$/;"	f
+W25X10_Init	.\w25x10.c	/^uint8_t W25X10_Init( void)$/;"	f
+W25X10_RData	.\w25x10.c	/^uint8_t W25X10_RData(uint32_t RAddr, uint8_t *buf, uint32_t RLength)$/;"	f
+W25X10_RcvData	.\w25x10.c	/^void W25X10_RcvData(uint8_t *buf, uint32_t length)$/;"	f
+W25X10_ReadID	.\w25x10.c	/^uint16_t W25X10_ReadID(void)$/;"	f
+W25X10_ReadStatus	.\w25x10.c	/^uint8_t W25X10_ReadStatus( void )$/;"	f
+W25X10_SendData	.\w25x10.c	/^void W25X10_SendData(uint8_t *buf, uint32_t length)$/;"	f
+W25X10_SetStatus	.\w25x10.c	/^void W25X10_SetStatus( uint16_t SetReg )$/;"	f
+W25X10_WData	.\w25x10.c	/^uint8_t W25X10_WData(uint32_t WAddr, uint8_t *buf, uint32_t WLength)$/;"	f
+W25X10_WDisable	.\w25x10.c	/^void W25X10_WDisable( void)$/;"	f
+W25X10_WEnable	.\w25x10.c	/^void W25X10_WEnable( void)$/;"	f
+WAKEUP0_IRQn	.\Common\inc\LPC11xx.h	/^  WAKEUP0_IRQn                  = 0,        \/*!< All I\/O pins can be used as wakeup source.       *\/$/;"	e	enum:IRQn
+WAKEUP10_IRQn	.\Common\inc\LPC11xx.h	/^  WAKEUP10_IRQn                 = 10,       $/;"	e	enum:IRQn
+WAKEUP11_IRQn	.\Common\inc\LPC11xx.h	/^  WAKEUP11_IRQn                 = 11,       $/;"	e	enum:IRQn
+WAKEUP12_IRQn	.\Common\inc\LPC11xx.h	/^  WAKEUP12_IRQn                 = 12,       $/;"	e	enum:IRQn
+WAKEUP1_IRQn	.\Common\inc\LPC11xx.h	/^  WAKEUP1_IRQn                  = 1,        \/*!< There are 13 pins in total for LPC11xx           *\/$/;"	e	enum:IRQn
+WAKEUP2_IRQn	.\Common\inc\LPC11xx.h	/^  WAKEUP2_IRQn                  = 2,$/;"	e	enum:IRQn
+WAKEUP3_IRQn	.\Common\inc\LPC11xx.h	/^  WAKEUP3_IRQn                  = 3,$/;"	e	enum:IRQn
+WAKEUP4_IRQn	.\Common\inc\LPC11xx.h	/^  WAKEUP4_IRQn                  = 4,   $/;"	e	enum:IRQn
+WAKEUP5_IRQn	.\Common\inc\LPC11xx.h	/^  WAKEUP5_IRQn                  = 5,        $/;"	e	enum:IRQn
+WAKEUP6_IRQn	.\Common\inc\LPC11xx.h	/^  WAKEUP6_IRQn                  = 6,        $/;"	e	enum:IRQn
+WAKEUP7_IRQn	.\Common\inc\LPC11xx.h	/^  WAKEUP7_IRQn                  = 7,        $/;"	e	enum:IRQn
+WAKEUP8_IRQn	.\Common\inc\LPC11xx.h	/^  WAKEUP8_IRQn                  = 8,        $/;"	e	enum:IRQn
+WAKEUP9_IRQn	.\Common\inc\LPC11xx.h	/^  WAKEUP9_IRQn                  = 9,        $/;"	e	enum:IRQn
+WAKEUP_IRQHandler	.\Common\src\pmu.c	/^void WAKEUP_IRQHandler(void)$/;"	f
+WAKE_UP0_IRQHandler	.\Common\src\cstartup_M.s	/^WAKE_UP0_IRQHandler:$/;"	l
+WAKE_UP10_IRQHandler	.\Common\src\cstartup_M.s	/^WAKE_UP10_IRQHandler:$/;"	l
+WAKE_UP11_IRQHandler	.\Common\src\cstartup_M.s	/^WAKE_UP11_IRQHandler:$/;"	l
+WAKE_UP12_IRQHandler	.\Common\src\cstartup_M.s	/^WAKE_UP12_IRQHandler:$/;"	l
+WAKE_UP1_IRQHandler	.\Common\src\cstartup_M.s	/^WAKE_UP1_IRQHandler:$/;"	l
+WAKE_UP2_IRQHandler	.\Common\src\cstartup_M.s	/^WAKE_UP2_IRQHandler:$/;"	l
+WAKE_UP3_IRQHandler	.\Common\src\cstartup_M.s	/^WAKE_UP3_IRQHandler:$/;"	l
+WAKE_UP4_IRQHandler	.\Common\src\cstartup_M.s	/^WAKE_UP4_IRQHandler:$/;"	l
+WAKE_UP5_IRQHandler	.\Common\src\cstartup_M.s	/^WAKE_UP5_IRQHandler:$/;"	l
+WAKE_UP6_IRQHandler	.\Common\src\cstartup_M.s	/^WAKE_UP6_IRQHandler:$/;"	l
+WAKE_UP7_IRQHandler	.\Common\src\cstartup_M.s	/^WAKE_UP7_IRQHandler:$/;"	l
+WAKE_UP8_IRQHandler	.\Common\src\cstartup_M.s	/^WAKE_UP8_IRQHandler:$/;"	l
+WAKE_UP9_IRQHandler	.\Common\src\cstartup_M.s	/^WAKE_UP9_IRQHandler:$/;"	l
+WDEN	.\Common\inc\wdt.h	14;"	d
+WDINT	.\Common\inc\wdt.h	17;"	d
+WDRESET	.\Common\inc\wdt.h	15;"	d
+WDTCLKDIV	.\Common\inc\LPC11xx.h	/^  __IO uint32_t WDTCLKDIV;              \/*!< Offset: 0x0D8 WDT clock divider (R\/W) *\/$/;"	m	struct:__anon14
+WDTCLKSEL	.\Common\inc\LPC11xx.h	/^  __IO uint32_t WDTCLKSEL;              \/*!< Offset: 0x0D0 WDT clock source select (R\/W) *\/$/;"	m	struct:__anon14
+WDTCLKUEN	.\Common\inc\LPC11xx.h	/^  __IO uint32_t WDTCLKUEN;              \/*!< Offset: 0x0D4 WDT clock source update enable (R\/W) *\/$/;"	m	struct:__anon14
+WDTCLK_SRC_IRC_OSC	.\Common\inc\clkconfig.h	14;"	d
+WDTCLK_SRC_MAIN_CLK	.\Common\inc\clkconfig.h	15;"	d
+WDTCLK_SRC_WDT_OSC	.\Common\inc\clkconfig.h	16;"	d
+WDTFeed	.\Common\src\wdt.c	/^void WDTFeed( void )$/;"	f
+WDTInit	.\Common\src\wdt.c	/^void WDTInit( void )$/;"	f
+WDTOF	.\Common\inc\wdt.h	16;"	d
+WDTOSCCTRL	.\Common\inc\LPC11xx.h	/^  __IO uint32_t WDTOSCCTRL;             \/*!< Offset: 0x024 Watchdog oscillator control (R\/W) *\/$/;"	m	struct:__anon14
+WDT_CLK_Setup	.\Common\src\clkconfig.c	/^void WDT_CLK_Setup ( uint32_t clksrc )$/;"	f
+WDT_FEED_VALUE	.\Common\inc\wdt.h	19;"	d
+WDT_IRQHandler	.\Common\src\cstartup_M.s	/^WDT_IRQHandler:$/;"	l
+WDT_IRQHandler	.\Common\src\wdt.c	/^void WDT_IRQHandler(void)$/;"	f
+WDT_IRQn	.\Common\inc\LPC11xx.h	/^  WDT_IRQn                      = 25,       \/*!< Watchdog timer Interrupt                         *\/  $/;"	e	enum:IRQn
+WDT_OSC	.\Common\src\system_LPC11xx.c	93;"	d	file:
+WDT_OSC_PD	.\Common\inc\pmu.h	31;"	d
+WR	.\Common\inc\can.h	134;"	d
+WRDI	.\Common\inc\ssp.h	87;"	d
+WRDI	.\ssp.h	88;"	d
+WREN	.\Common\inc\ssp.h	86;"	d
+WREN	.\ssp.h	87;"	d
+WRITE	.\Common\inc\ssp.h	91;"	d
+WRITE	.\ssp.h	92;"	d
+WRSR	.\Common\inc\ssp.h	89;"	d
+WRSR	.\ssp.h	90;"	d
+WrIndex	.\Common\src\i2c.c	/^volatile uint32_t WrIndex = 0;$/;"	v
+XTAL	.\Common\src\system_LPC11xx.c	90;"	d	file:
+_BIT_SHIFT	.\Common\inc\core_cm0.h	597;"	d
+_IP_IDX	.\Common\inc\core_cm0.h	599;"	d
+_MINUTE	.\Common\inc\timerman.h	22;"	d
+_SECOND	.\Common\inc\timerman.h	21;"	d
+_SHP_IDX	.\Common\inc\core_cm0.h	598;"	d
+_TICK	.\Common\inc\timerman.h	20;"	d
+__ADC_H	.\Common\inc\adc.h	12;"	d
+__ASM	.\Common\inc\core_cm0.h	154;"	d
+__ASM	.\Common\inc\core_cm0.h	158;"	d
+__ASM	.\Common\inc\core_cm0.h	162;"	d
+__ASM	.\Common\inc\core_cm0.h	166;"	d
+__ASM	.\Common\src\core_cm0.c	29;"	d	file:
+__ASM	.\Common\src\core_cm0.c	33;"	d	file:
+__ASM	.\Common\src\core_cm0.c	38;"	d	file:
+__CAN_H__	.\Common\inc\can.h	21;"	d
+__CAN_H__	.\Common\inc\can_api.h	12;"	d
+__CLKCONFIG_H	.\Common\inc\clkconfig.h	12;"	d
+__CM0_CMSIS_VERSION	.\Common\inc\core_cm0.h	31;"	d
+__CM0_CMSIS_VERSION_MAIN	.\Common\inc\core_cm0.h	29;"	d
+__CM0_CMSIS_VERSION_SUB	.\Common\inc\core_cm0.h	30;"	d
+__CM0_CORE_H__	.\Common\inc\core_cm0.h	23;"	d
+__CORTEX_M	.\Common\inc\core_cm0.h	33;"	d
+__DMB	.\Common\inc\core_cm0.h	/^static __INLINE void __DMB()                      { __ASM volatile ("dmb"); }$/;"	f
+__DMB	.\Common\inc\core_cm0.h	186;"	d
+__DSB	.\Common\inc\core_cm0.h	/^static __INLINE void __DSB()                      { __ASM volatile ("dsb"); }$/;"	f
+__DSB	.\Common\inc\core_cm0.h	185;"	d
+__GPIO_H	.\Common\inc\gpio.h	12;"	d
+__I	.\Common\inc\core_cm0.h	58;"	d
+__I	.\Common\inc\core_cm0.h	60;"	d
+__I2C_H	.\Common\inc\i2c.h	12;"	d
+__INLINE	.\Common\inc\core_cm0.h	155;"	d
+__INLINE	.\Common\inc\core_cm0.h	159;"	d
+__INLINE	.\Common\inc\core_cm0.h	163;"	d
+__INLINE	.\Common\inc\core_cm0.h	167;"	d
+__INLINE	.\Common\src\core_cm0.c	30;"	d	file:
+__INLINE	.\Common\src\core_cm0.c	34;"	d	file:
+__INLINE	.\Common\src\core_cm0.c	39;"	d	file:
+__IO	.\Common\inc\core_cm0.h	63;"	d
+__ISB	.\Common\inc\core_cm0.h	/^static __INLINE void __ISB()                      { __ASM volatile ("isb"); }$/;"	f
+__ISB	.\Common\inc\core_cm0.h	184;"	d
+__JTAG_DISABLED	.\Common\inc\adc.h	13;"	d
+__LDREXB	.\Common\src\core_cm0.c	/^uint8_t __LDREXB(uint8_t *addr)$/;"	f
+__LDREXH	.\Common\src\core_cm0.c	/^uint16_t __LDREXH(uint16_t *addr)$/;"	f
+__LDREXW	.\Common\src\core_cm0.c	/^uint32_t __LDREXW(uint32_t *addr)$/;"	f
+__LPC11xx_H__	.\Common\inc\LPC11xx.h	27;"	d
+__LPC_CONTROL__	.\lpc_control.h	2;"	d
+__MPU_PRESENT	.\Common\inc\LPC11xx.h	106;"	d
+__NOP	.\Common\inc\core_cm0.h	/^static __INLINE void __NOP()                      { __ASM volatile ("nop"); }$/;"	f
+__NOP	.\Common\inc\core_cm0.h	180;"	d
+__NOP	.\Common\inc\core_cm0.h	374;"	d
+__NVIC_PRIO_BITS	.\Common\inc\LPC11xx.h	107;"	d
+__NVIC_PRIO_BITS	.\Common\inc\core_cm0.h	45;"	d
+__O	.\Common\inc\core_cm0.h	62;"	d
+__PMU_H	.\Common\inc\pmu.h	12;"	d
+__RBIT	.\Common\src\core_cm0.c	/^uint32_t __RBIT(uint32_t value)$/;"	f
+__REV	.\Common\inc\core_cm0.h	187;"	d
+__REV	.\Common\src\core_cm0.c	/^uint32_t __REV(uint32_t value)$/;"	f
+__REV16	.\Common\src\core_cm0.c	/^__ASM uint32_t __REV16(uint16_t value)$/;"	f
+__REV16	.\Common\src\core_cm0.c	/^uint32_t __REV16(uint16_t value)$/;"	f
+__REVSH	.\Common\src\core_cm0.c	/^__ASM int32_t __REVSH(int16_t value)$/;"	f
+__REVSH	.\Common\src\core_cm0.c	/^int32_t __REVSH(int16_t value)$/;"	f
+__SEV	.\Common\inc\core_cm0.h	/^static __INLINE  void __SEV()                     { __ASM ("sev"); }$/;"	f
+__SEV	.\Common\inc\core_cm0.h	/^static __INLINE void __SEV()                      { __ASM volatile ("sev"); }$/;"	f
+__SEV	.\Common\inc\core_cm0.h	183;"	d
+__SSP_H__	.\Common\inc\ssp.h	12;"	d
+__SSP_H__	.\ssp.h	12;"	d
+__STREXB	.\Common\src\core_cm0.c	/^uint32_t __STREXB(uint8_t value, uint8_t *addr)$/;"	f
+__STREXH	.\Common\src\core_cm0.c	/^uint32_t __STREXH(uint16_t value, uint16_t *addr)$/;"	f
+__STREXW	.\Common\src\core_cm0.c	/^uint32_t __STREXW(uint32_t value, uint32_t *addr)$/;"	f
+__SYSTEM_LPC11xx_H	.\Common\inc\system_LPC11xx.h	25;"	d
+__TIMER16_H	.\Common\inc\timer16.h	12;"	d
+__TIMER32_H	.\Common\inc\timer32.h	12;"	d
+__TYPE_H__	.\Common\inc\type.h	13;"	d
+__UART_H	.\Common\inc\uart.h	12;"	d
+__Vendor_SysTickConfig	.\Common\inc\LPC11xx.h	108;"	d
+__W25X10_H__	.\w25x10.h	12;"	d
+__WDT_H	.\Common\inc\wdt.h	12;"	d
+__WFE	.\Common\inc\core_cm0.h	/^static __INLINE  void __WFE()                     { __ASM ("wfe"); }$/;"	f
+__WFE	.\Common\inc\core_cm0.h	/^static __INLINE void __WFE()                      { __ASM volatile ("wfe"); }$/;"	f
+__WFE	.\Common\inc\core_cm0.h	182;"	d
+__WFI	.\Common\inc\core_cm0.h	/^static __INLINE  void __WFI()                     { __ASM ("wfi"); }$/;"	f
+__WFI	.\Common\inc\core_cm0.h	/^static __INLINE void __WFI()                      { __ASM volatile ("wfi"); }$/;"	f
+__WFI	.\Common\inc\core_cm0.h	181;"	d
+__disable_fault_irq	.\Common\inc\core_cm0.h	/^static __INLINE void __disable_fault_irq()        { __ASM ("cpsid f"); }$/;"	f
+__disable_fault_irq	.\Common\inc\core_cm0.h	/^static __INLINE void __disable_fault_irq()        { __ASM volatile ("cpsid f"); }$/;"	f
+__disable_fault_irq	.\Common\inc\core_cm0.h	178;"	d
+__disable_irq	.\Common\inc\core_cm0.h	/^static __INLINE void __disable_irq()              { __ASM volatile ("cpsid i"); }$/;"	f
+__disable_irq	.\Common\inc\core_cm0.h	369;"	d
+__enable_fault_irq	.\Common\inc\core_cm0.h	/^static __INLINE void __enable_fault_irq()         { __ASM ("cpsie f"); }$/;"	f
+__enable_fault_irq	.\Common\inc\core_cm0.h	/^static __INLINE void __enable_fault_irq()         { __ASM volatile ("cpsie f"); }$/;"	f
+__enable_fault_irq	.\Common\inc\core_cm0.h	177;"	d
+__enable_irq	.\Common\inc\core_cm0.h	/^static __INLINE void __enable_irq()               { __ASM volatile ("cpsie i"); }$/;"	f
+__enable_irq	.\Common\inc\core_cm0.h	368;"	d
+__get_BASEPRI	.\Common\src\core_cm0.c	/^__ASM uint32_t  __get_BASEPRI(void)$/;"	f
+__get_BASEPRI	.\Common\src\core_cm0.c	/^uint32_t __get_BASEPRI(void)$/;"	f
+__get_CONTROL	.\Common\inc\core_cm0.h	/^static __INLINE uint32_t __get_CONTROL(void)$/;"	f
+__get_CONTROL	.\Common\src\core_cm0.c	/^__ASM uint32_t  __get_CONTROL(void)$/;"	f
+__get_CONTROL	.\Common\src\core_cm0.c	/^uint32_t __get_CONTROL(void)$/;"	f
+__get_FAULTMASK	.\Common\src\core_cm0.c	/^__ASM uint32_t  __get_FAULTMASK(void)$/;"	f
+__get_FAULTMASK	.\Common\src\core_cm0.c	/^uint32_t __get_FAULTMASK(void)$/;"	f
+__get_MSP	.\Common\src\core_cm0.c	/^__ASM uint32_t __get_MSP(void)$/;"	f
+__get_MSP	.\Common\src\core_cm0.c	/^uint32_t __get_MSP(void)$/;"	f
+__get_PRIMASK	.\Common\inc\core_cm0.h	/^static __INLINE uint32_t __get_PRIMASK(void)$/;"	f
+__get_PRIMASK	.\Common\src\core_cm0.c	/^__ASM uint32_t __get_PRIMASK(void)$/;"	f
+__get_PRIMASK	.\Common\src\core_cm0.c	/^uint32_t __get_PRIMASK(void)$/;"	f
+__get_PSP	.\Common\src\core_cm0.c	/^__ASM uint32_t __get_PSP(void)$/;"	f
+__get_PSP	.\Common\src\core_cm0.c	/^uint32_t __get_PSP(void)$/;"	f
+__nop	.\Common\src\core_cm0.c	35;"	d	file:
+__set_BASEPRI	.\Common\src\core_cm0.c	/^__ASM void __set_BASEPRI(uint32_t basePri)$/;"	f
+__set_BASEPRI	.\Common\src\core_cm0.c	/^void __set_BASEPRI(uint32_t value)$/;"	f
+__set_CONTROL	.\Common\inc\core_cm0.h	/^static __INLINE void __set_CONTROL(uint32_t control)$/;"	f
+__set_CONTROL	.\Common\src\core_cm0.c	/^__ASM void __set_CONTROL(uint32_t control)$/;"	f
+__set_CONTROL	.\Common\src\core_cm0.c	/^void __set_CONTROL(uint32_t control)$/;"	f
+__set_FAULTMASK	.\Common\src\core_cm0.c	/^__ASM void __set_FAULTMASK(uint32_t faultMask)$/;"	f
+__set_FAULTMASK	.\Common\src\core_cm0.c	/^void __set_FAULTMASK(uint32_t faultMask)$/;"	f
+__set_MSP	.\Common\src\core_cm0.c	/^__ASM void __set_MSP(uint32_t mainStackPointer)$/;"	f
+__set_MSP	.\Common\src\core_cm0.c	/^void __set_MSP(uint32_t topOfMainStack)$/;"	f
+__set_PRIMASK	.\Common\inc\core_cm0.h	/^static __INLINE void __set_PRIMASK(uint32_t priMask)$/;"	f
+__set_PRIMASK	.\Common\src\core_cm0.c	/^__ASM void __set_PRIMASK(uint32_t priMask)$/;"	f
+__set_PRIMASK	.\Common\src\core_cm0.c	/^void __set_PRIMASK(uint32_t priMask)$/;"	f
+__set_PSP	.\Common\src\core_cm0.c	/^__ASM void __set_PSP(uint32_t topOfProcStack)$/;"	f
+__set_PSP	.\Common\src\core_cm0.c	/^void __set_PSP(uint32_t topOfProcStack)$/;"	f
+__vector_table	.\Common\src\cstartup_M.s	/^__vector_table$/;"	l
+__vector_table_0x1c	.\Common\src\cstartup_M.s	/^__vector_table_0x1c$/;"	l
+blankChk	.\Common\src\iap.c	/^unsigned int  blankChk (unsigned char ucSec1, unsigned char ucSec2)$/;"	f
+bool_t	.\Common\inc\type.h	/^typedef unsigned          char bool_t;$/;"	t
+can_buff	.\Common\src\can.c	/^message_object can_buff[MSG_OBJ_MAX];$/;"	v
+can_buff	.\Common\src\can_api.c	/^CAN_MSG_OBJ can_buff[MSG_OBJ_MAX];$/;"	v
+can_receive	.\Common\inc\can_api.h	/^	void    (*can_receive)(CAN_MSG_OBJ *msg_obj);$/;"	m	struct:__anon7
+can_transmit	.\Common\inc\can_api.h	/^	void    (*can_transmit)(CAN_MSG_OBJ *msg_obj);$/;"	m	struct:__anon7
+canopen_handler	.\Common\inc\can_api.h	/^	void    (*canopen_handler)(void);$/;"	m	struct:__anon7
+channel_flag	.\Common\src\adc.c	/^volatile uint32_t channel_flag; $/;"	v
+codeIdBoot	.\Common\src\iap.c	/^unsigned int  codeIdBoot (void)$/;"	f
+con_led	.\lpc_control.c	/^void con_led(void)$/;"	f
+con_motor	.\lpc_control.c	/^void con_motor(void)$/;"	f
+config_calb	.\Common\inc\can_api.h	/^	void    (*config_calb)(CAN_CALLBACKS *callback_cfg);$/;"	m	struct:__anon7
+config_canopen	.\Common\inc\can_api.h	/^	void    (*config_canopen)(CAN_CANOPENCFG *canopen_cfg);$/;"	m	struct:__anon7
+config_rxmsgobj	.\Common\inc\can_api.h	/^	void    (*config_rxmsgobj)(CAN_MSG_OBJ *msg_obj);$/;"	m	struct:__anon7
+data	.\Common\inc\can.h	/^    uint32_t	data[4];$/;"	m	struct:__anon1
+data	.\Common\inc\can_api.h	/^    uint8_t     data[8];$/;"	m	struct:__anon2
+dataCompare	.\Common\src\iap.c	/^unsigned int  dataCompare (unsigned int ulDst, unsigned int ulSrc, unsigned int ulNo)$/;"	f
+delay32Ms	.\Common\src\timer32.c	/^void delay32Ms(uint8_t timer_num, uint32_t delayInMs)$/;"	f
+delayMs	.\Common\src\timer16.c	/^void delayMs(uint8_t timer_num, uint32_t delayInMs)$/;"	f
+disable_timer16	.\Common\src\timer16.c	/^void disable_timer16(uint8_t timer_num)$/;"	f
+disable_timer32	.\Common\src\timer32.c	/^void disable_timer32(uint8_t timer_num)$/;"	f
+display	.\Common\src\Key.c	/^unsigned char display(int i)  $/;"	f
+dlc	.\Common\inc\can.h	/^    uint32_t 	dlc;$/;"	m	struct:__anon1
+dlc	.\Common\inc\can_api.h	/^    uint8_t     dlc;$/;"	m	struct:__anon2
+enable_timer16	.\Common\src\timer16.c	/^void enable_timer16(uint8_t timer_num)$/;"	f
+enable_timer32	.\Common\src\timer32.c	/^void enable_timer32(uint8_t timer_num)$/;"	f
+entrytype_len	.\Common\inc\can_api.h	/^    uint8_t   entrytype_len;$/;"	m	struct:__anon4
+getch	.\Common\src\uart.c	/^char getch(void)$/;"	f
+getchar	.\Common\src\uart.c	/^char getchar(void)$/;"	f
+gets	.\Common\src\uart.c	/^void gets(char * s)$/;"	f
+gpio0_counter	.\Common\src\gpio.c	/^volatile uint32_t gpio0_counter = 0;$/;"	v
+gpio1_counter	.\Common\src\gpio.c	/^volatile uint32_t gpio1_counter = 0;$/;"	v
+gpio2_counter	.\Common\src\gpio.c	/^volatile uint32_t gpio2_counter = 0;$/;"	v
+gpio3_counter	.\Common\src\gpio.c	/^volatile uint32_t gpio3_counter = 0;$/;"	v
+iap_entry	.\Common\src\iap.c	/^int iap_entry (unsigned char *data,unsigned int length)$/;"	f
+id	.\Common\inc\can.h	/^    uint32_t	id;$/;"	m	struct:__anon1
+index	.\Common\inc\can_api.h	/^    uint16_t  index;$/;"	m	struct:__anon3
+index	.\Common\inc\can_api.h	/^    uint16_t  index;$/;"	m	struct:__anon4
+init_can	.\Common\inc\can_api.h	/^    void    (*init_can)(uint32_t *can_cfg);$/;"	m	struct:__anon7
+init_timer16	.\Common\src\timer16.c	/^void init_timer16(uint8_t timer_num, uint32_t TimerInterval) $/;"	f
+init_timer16PWM	.\Common\src\timer16.c	/^void init_timer16PWM(uint8_t timer_num, uint32_t period, uint8_t match_enable, uint8_t cap_enabled)$/;"	f
+init_timer32	.\Common\src\timer32.c	/^void init_timer32(uint8_t timer_num, uint32_t TimerInterval) $/;"	f
+init_timer32PWM	.\Common\src\timer32.c	/^void init_timer32PWM(uint8_t timer_num, uint32_t period, uint8_t match_enable)$/;"	f
+interruptOverRunStat0	.\Common\src\ssp.c	/^volatile uint32_t interruptOverRunStat0 = 0;$/;"	v
+interruptOverRunStat0	.\ssp.c	/^volatile uint32_t interruptOverRunStat0 = 0;$/;"	v
+interruptOverRunStat1	.\Common\src\ssp.c	/^volatile uint32_t interruptOverRunStat1 = 0;$/;"	v
+interruptOverRunStat1	.\ssp.c	/^volatile uint32_t interruptOverRunStat1 = 0;$/;"	v
+interruptRxStat0	.\Common\src\ssp.c	/^volatile uint32_t interruptRxStat0 = 0;$/;"	v
+interruptRxStat0	.\ssp.c	/^volatile uint32_t interruptRxStat0 = 0;$/;"	v
+interruptRxStat1	.\Common\src\ssp.c	/^volatile uint32_t interruptRxStat1 = 0;$/;"	v
+interruptRxStat1	.\ssp.c	/^volatile uint32_t interruptRxStat1 = 0;$/;"	v
+interruptRxTimeoutStat0	.\Common\src\ssp.c	/^volatile uint32_t interruptRxTimeoutStat0 = 0;$/;"	v
+interruptRxTimeoutStat0	.\ssp.c	/^volatile uint32_t interruptRxTimeoutStat0 = 0;$/;"	v
+interruptRxTimeoutStat1	.\Common\src\ssp.c	/^volatile uint32_t interruptRxTimeoutStat1 = 0;$/;"	v
+interruptRxTimeoutStat1	.\ssp.c	/^volatile uint32_t interruptRxTimeoutStat1 = 0;$/;"	v
+interval	.\Common\src\timerman.c	/^    uint32_t     interval;$/;"	m	struct:__anon30	file:
+isr	.\Common\inc\can_api.h	/^	void    (*isr)(void);$/;"	m	struct:__anon7
+len	.\Common\inc\can_api.h	/^    uint8_t   len;$/;"	m	struct:__anon3
+main	.\main.c	/^int main (void) $/;"	f
+mask	.\Common\inc\can_api.h	/^	uint32_t    mask; $/;"	m	struct:__anon2
+message_object	.\Common\inc\can.h	/^} message_object;$/;"	t	typeref:struct:__anon1
+mode_id	.\Common\inc\can_api.h	/^    uint32_t	mode_id;$/;"	m	struct:__anon2
+motor_flags	.\lpc_control.c	/^unsigned int motor_flags = 0;$/;"	v
+msgobj	.\Common\inc\can_api.h	/^	uint8_t     msgobj;$/;"	m	struct:__anon2
+msgobj_rx	.\Common\inc\can_api.h	/^    uint8_t       msgobj_rx;$/;"	m	struct:__anon5
+msgobj_tx	.\Common\inc\can_api.h	/^    uint8_t       msgobj_tx;$/;"	m	struct:__anon5
+node_id	.\Common\inc\can_api.h	/^    uint8_t       node_id;$/;"	m	struct:__anon5
+od_const_num	.\Common\inc\can_api.h	/^    uint32_t      od_const_num;$/;"	m	struct:__anon5
+od_const_table	.\Common\inc\can_api.h	/^    CAN_ODCONSTENTRY *od_const_table;$/;"	m	struct:__anon5
+od_num	.\Common\inc\can_api.h	/^    uint32_t      od_num;$/;"	m	struct:__anon5
+od_table	.\Common\inc\can_api.h	/^    CAN_ODENTRY  *od_table;$/;"	m	struct:__anon5
+p0_1_counter	.\Common\src\gpio.c	/^volatile uint32_t p0_1_counter  = 0;$/;"	v
+p1_1_counter	.\Common\src\gpio.c	/^volatile uint32_t p1_1_counter  = 0;$/;"	v
+p2_1_counter	.\Common\src\gpio.c	/^volatile uint32_t p2_1_counter  = 0;$/;"	v
+p3_1_counter	.\Common\src\gpio.c	/^volatile uint32_t p3_1_counter  = 0;$/;"	v
+pCANAPI	.\Common\inc\can_api.h	/^    const    CAND *pCANAPI;$/;"	m	struct:__anon8
+parIdRead	.\Common\src\iap.c	/^unsigned int  parIdRead (void)$/;"	f
+pmu_counter	.\Common\src\pmu.c	/^volatile uint32_t pmu_counter = 0;$/;"	v
+preticks	.\Common\src\timerman.c	/^static   uint32_t                  preticks;$/;"	v	file:
+ptr	.\Common\inc\can_api.h	/^    void     *ptr;$/;"	m	struct:__anon8
+ptr1	.\Common\inc\can_api.h	/^	void     *ptr1;$/;"	m	struct:__anon8
+putch	.\Common\src\uart.c	/^void putch( char data )$/;"	f
+puts	.\Common\src\uart.c	/^void puts(char * s)$/;"	f
+ramCopy	.\Common\src\iap.c	/^unsigned int  ramCopy (unsigned int ulDst, unsigned int ulSrc, unsigned int ulNo)$/;"	f
+read_adc	.\lpc_control.c	/^void read_adc(void)$/;"	f
+read_spid	.\lpc_control.c	/^void read_spid(void)$/;"	f
+read_temp	.\lpc_control.c	/^void read_temp(void)$/;"	f
+ready	.\Common\src\timerman.c	/^    uint8_t      ready;$/;"	m	struct:__anon30	file:
+reset_timer16	.\Common\src\timer16.c	/^void reset_timer16(uint8_t timer_num)$/;"	f
+reset_timer32	.\Common\src\timer32.c	/^void reset_timer32(uint8_t timer_num)$/;"	f
+s_CANBitClk	.\Common\src\can_api.c	/^static uint32_t s_CANBitClk[2] = {$/;"	v	file:
+sectorErase	.\Common\src\iap.c	/^unsigned int  sectorErase (unsigned char ucSec1, unsigned char ucSec2)$/;"	f
+sectorPrepare	.\Common\src\iap.c	/^unsigned int  sectorPrepare (unsigned char ucSec1, unsigned char ucSec2)$/;"	f
+setMatch_timer16PWM	.\Common\src\timer16.c	/^void setMatch_timer16PWM (uint8_t timer_num, uint8_t match_nr, uint32_t value)$/;"	f
+setMatch_timer32PWM	.\Common\src\timer32.c	/^void setMatch_timer32PWM (uint8_t timer_num, uint8_t match_nr, uint32_t value)$/;"	f
+spidWriteBuf	.\lpc_control.c	/^uint8_t spidWriteBuf[10]="1001130718"; \/\/ define SPI ID$/;"	v
+step1_ccw	.\Common\src\stepmotor.c	/^uint32_t step1_ccw[8] = {0x02,0x06,0x04,0x0c,0x08,0x48,0x40,0x42};$/;"	v
+step1_ccw	.\stepmotor.c	/^uint32_t step1_ccw[8] = {0x02,0x06,0x04,0x0c,0x08,0x48,0x40,0x42};$/;"	v
+step1_cw	.\Common\src\stepmotor.c	/^uint32_t step1_cw[8] = {0x42,0x40,0x48,0x08,0x0c,0x04,0x06,0x02};$/;"	v
+step1_cw	.\stepmotor.c	/^uint32_t step1_cw[8] = {0x42,0x40,0x48,0x08,0x0c,0x04,0x06,0x02};$/;"	v
+step2_ccw	.\Common\src\stepmotor.c	/^uint32_t step2_ccw[8] = {0x80,0x180,0x100,0x300,0x200,0xa00,0x800,0x880};$/;"	v
+step2_ccw	.\stepmotor.c	/^uint32_t step2_ccw[8] = {0x80,0x180,0x100,0x300,0x200,0xa00,0x800,0x880};$/;"	v
+step2_cw	.\Common\src\stepmotor.c	/^uint32_t step2_cw[8] = {0x880,0x800,0xa00,0x200,0x300,0x100,0x180,0x80};$/;"	v
+step2_cw	.\stepmotor.c	/^uint32_t step2_cw[8] = {0x880,0x800,0xa00,0x200,0x300,0x100,0x180,0x80};$/;"	v
+step3_ccw	.\Common\src\stepmotor.c	/^uint32_t step3_ccw[8] = {0x10,0x30,0x20,0x60,0x40,0xc0,0x80,0x90};$/;"	v
+step3_ccw	.\stepmotor.c	/^uint32_t step3_ccw[8] = {0x10,0x30,0x20,0x60,0x40,0xc0,0x80,0x90};$/;"	v
+step3_cw	.\Common\src\stepmotor.c	/^uint32_t step3_cw[8] = {0x90,0x80,0xc0,0x40,0x60,0x20,0x30,0x10};$/;"	v
+step3_cw	.\stepmotor.c	/^uint32_t step3_cw[8] = {0x90,0x80,0xc0,0x40,0x60,0x20,0x30,0x10};$/;"	v
+subindex	.\Common\inc\can_api.h	/^    uint8_t   subindex;$/;"	m	struct:__anon3
+subindex	.\Common\inc\can_api.h	/^    uint8_t   subindex;$/;"	m	struct:__anon4
+table	.\Common\src\Key.c	/^static unsigned char  table[9]={0X31,0X32,0X33,0X34,0X35,0X36,0X37,0X38,0X39};  \/\/按键返回值$/;"	v	file:
+tag	.\Common\src\timerman.c	/^    uint32_t     tag;$/;"	m	struct:__anon30	file:
+temp_value	.\lpc_control.c	/^uint16_t temp_value = 0x00;$/;"	v
+time	.\Common\src\timerman.c	/^    uint32_t     time;$/;"	m	struct:__anon30	file:
+timer	.\Common\src\timerman.c	/^static   TIMER_T                   timer[MAX_TMR];$/;"	v	file:
+timer16_0_capture	.\Common\src\timer16.c	/^volatile uint32_t timer16_0_capture = 0;$/;"	v
+timer16_0_counter	.\Common\src\timer16.c	/^volatile uint32_t timer16_0_counter = 0;$/;"	v
+timer16_0_period	.\Common\src\timer16.c	/^volatile uint32_t timer16_0_period = 0;$/;"	v
+timer16_1_capture	.\Common\src\timer16.c	/^volatile uint32_t timer16_1_capture = 0;$/;"	v
+timer16_1_counter	.\Common\src\timer16.c	/^volatile uint32_t timer16_1_counter = 0;$/;"	v
+timer16_1_period	.\Common\src\timer16.c	/^volatile uint32_t timer16_1_period = 0;$/;"	v
+timer32_0_capture	.\Common\src\timer32.c	/^volatile uint32_t timer32_0_capture = 0;$/;"	v
+timer32_0_counter	.\Common\src\timer32.c	/^volatile uint32_t timer32_0_counter = 0;$/;"	v
+timer32_0_period	.\Common\src\timer32.c	/^volatile uint32_t timer32_0_period = 0;$/;"	v
+timer32_1_capture	.\Common\src\timer32.c	/^volatile uint32_t timer32_1_capture = 0;$/;"	v
+timer32_1_counter	.\Common\src\timer32.c	/^volatile uint32_t timer32_1_counter = 0;$/;"	v
+timer32_1_period	.\Common\src\timer32.c	/^volatile uint32_t timer32_1_period = 0;$/;"	v
+tmrproc	.\Common\src\timerman.c	/^    void       (*tmrproc)(uint32_t);$/;"	m	struct:__anon30	file:
+val	.\Common\inc\can_api.h	/^    uint32_t  val;$/;"	m	struct:__anon3
+val	.\Common\inc\can_api.h	/^    uint8_t  *val;$/;"	m	struct:__anon4
+w25destaddr	.\w25x10.c	/^uint8_t w25destaddr[SSP_BUFSIZE];									\/\/ 写命令及数据缓冲区$/;"	v
+w25srcaddr	.\w25x10.c	/^uint8_t w25srcaddr [SSP_BUFSIZE];									\/\/ 读命令及数据缓冲区 $/;"	v
+wdt_counter	.\Common\src\wdt.c	/^volatile uint32_t wdt_counter;$/;"	v
+wm_op	.\lpc_control.c	/^void wm_op()$/;"	f

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>WashingMachine/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>159</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>18</ColumnWidth0><ColumnWidth1>982</ColumnWidth1><ColumnWidth2>262</ColumnWidth2><ColumnWidth3>65</ColumnWidth3></Build>
+      <TerminalIO/>
+    <Debug-Log><ColumnWidth0>18</ColumnWidth0><ColumnWidth1>1310</ColumnWidth1></Debug-Log></Static>
+    <Windows>
+      
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-351-8137</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>WashingMachine</ExpandedNode><ExpandedNode>WashingMachine/API</ExpandedNode><ExpandedNode>WashingMachine/Header</ExpandedNode><ExpandedNode>WashingMachine/SRC</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-18711-8202</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-11242-23892</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>D:\tmp\arm\Common\src\timer32.c</Filename><XPos>0</XPos><YPos>48</YPos><SelStart>2073</SelStart><SelEnd>2073</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\stepmotor.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>690</SelStart><SelEnd>690</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\stepmotor.c</Filename><XPos>0</XPos><YPos>8</YPos><SelStart>1011</SelStart><SelEnd>1011</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>D:\tmp\arm\Common\inc\uart.h</Filename><XPos>0</XPos><YPos>42</YPos><SelStart>1643</SelStart><SelEnd>1643</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>D:\Program Files\IAR Systems\Embedded Workbench 5.4 Evaluation\arm\doc\infocenter\index.ENU.html</Filename></Tab><Tab><Factory>TextEditor</Factory><Filename>D:\tmp\arm\Common\inc\ssp.h</Filename><XPos>0</XPos><YPos>27</YPos><SelStart>1463</SelStart><SelEnd>1463</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>177</SelStart><SelEnd>177</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>D:\tmp\arm\Common\src\ssp.c</Filename><XPos>0</XPos><YPos>165</YPos><SelStart>5925</SelStart><SelEnd>5925</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\w25x10.c</Filename><XPos>0</XPos><YPos>164</YPos><SelStart>6678</SelStart><SelEnd>6678</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\ssp.c</Filename><XPos>0</XPos><YPos>188</YPos><SelStart>6574</SelStart><SelEnd>6574</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\ssp.h</Filename><XPos>0</XPos><YPos>87</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>D:\tmp\arm\Common\src\i2c.c</Filename><XPos>0</XPos><YPos>283</YPos><SelStart>8135</SelStart><SelEnd>8135</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\lpc_control.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>254</SelStart><SelEnd>254</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\lpc_control.c</Filename><XPos>0</XPos><YPos>120</YPos><SelStart>4260</SelStart><SelEnd>4260</SelEnd></Tab><ActiveTab>13</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-0139ed48><key>iaridepm.enu1</key></Toolbar-0139ed48></Sizes></Row0></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>563</Bottom><Right>233</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>146413</sizeHorzCX><sizeHorzCY>292398</sizeHorzCY><sizeVertCX>172035</sizeVertCX><sizeVertCY>826023</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>76</Bottom><Right>1368</Right><x>-2</x><y>-2</y><xscreen>1370</xscreen><yscreen>78</yscreen><sizeHorzCX>1002928</sizeHorzCX><sizeHorzCY>114035</sizeHorzCY><sizeVertCX>146413</sizeVertCX><sizeVertCY>292398</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

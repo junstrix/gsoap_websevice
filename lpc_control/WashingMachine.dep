@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>2049441042</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\Common\src\core_cm0.c</file>
+      <file>D:\tmp\arm\Common\src\i2c.c</file>
+      <file>$PROJ_DIR$\Common\src\clkconfig.c</file>
+      <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
+      <file>$TOOLKIT_DIR$\inc\xencoding_limits.h</file>
+      <file>D:\tmp\arm\Common\src\cstartup_M.s</file>
+      <file>$PROJ_DIR$\Debug\Obj\timer32.o</file>
+      <file>$PROJ_DIR$\Common\src\cstartup_M.s</file>
+      <file>$PROJ_DIR$\Common\src\adc.c</file>
+      <file>$PROJ_DIR$\Common\src\gpio.c</file>
+      <file>$PROJ_DIR$\Common\src\i2c.c</file>
+      <file>$PROJ_DIR$\ssp.c</file>
+      <file>$PROJ_DIR$\Common\src\system_LPC11xx.c</file>
+      <file>$PROJ_DIR$\Common\src\timer32.c</file>
+      <file>$PROJ_DIR$\Common\src\uart.c</file>
+      <file>$PROJ_DIR$\w25x10.c</file>
+      <file>$PROJ_DIR$\lpc_control.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\stepmotor.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\uart.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>D:\tmp\arm\Common\icf\LPC1114_Flash.icf</file>
+      <file>$PROJ_DIR$\Debug\Obj\stepmotor.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\stdint.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\adc.o</file>
+      <file>D:\tmp\arm\Common\inc\adc.h</file>
+      <file>D:\tmp\arm\Common\src\adc.c</file>
+      <file>$PROJ_DIR$\Debug\Exe\WashingMachine.out</file>
+      <file>D:\tmp\arm\Common\inc\system_LPC11xx.h</file>
+      <file>D:\tmp\arm\Common\src\gpio.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\adc.pbi</file>
+      <file>D:\tmp\arm\Common\src\clkconfig.c</file>
+      <file>D:\tmp\arm\Common\src\system_LPC11xx.c</file>
+      <file>D:\tmp\arm\Common\src\timer32.c</file>
+      <file>D:\tmp\arm\Common\src\uart.c</file>
+      <file>D:\tmp\arm\Common\inc\uart.h</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\core_cm0.o</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\ycheck.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\cstartup_M.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\core_cm0.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\gpio.pbi</file>
+      <file>$PROJ_DIR$\stepmotor.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\system_LPC11xx.o</file>
+      <file>D:\tmp\arm\Common\inc\type.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\clkconfig.o</file>
+      <file>$PROJ_DIR$\ssp.h</file>
+      <file>D:\tmp\arm\Common\inc\stepmotor.h</file>
+      <file>$PROJ_DIR$\w25x10.h</file>
+      <file>$PROJ_DIR$\lpc_control.c</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\stepmotor.c</file>
+      <file>D:\tmp\arm\Common\src\core_cm0.c</file>
+      <file>D:\tmp\arm\Common\inc\clkconfig.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\system_LPC11xx.pbi</file>
+      <file>D:\tmp\arm\Common\inc\gpio.h</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Product_string.h</file>
+      <file>D:\tmp\arm\Common\inc\i2c.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\string.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\washingMachine.o</file>
+      <file>D:\tmp\arm\Common\inc\timer16.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\lpc_control.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\gpio.o</file>
+      <file>$PROJ_DIR$\washingMachine.h</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\washingMachine.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\i2c.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\ssp.o</file>
+      <file>D:\tmp\arm\Common\inc\ssp.h</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Defaults.h</file>
+      <file>D:\tmp\arm\Common\src\ssp.c</file>
+      <file>$TOOLKIT_DIR$\inc\stdlib.h</file>
+      <file>D:\tmp\arm\Common\inc\timer32.h</file>
+      <file>D:\tmp\arm\Common\inc\core_cm0.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\w25x10.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\i2c.pbi</file>
+      <file>D:\tmp\arm\Common\inc\LPC11xx.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\clkconfig.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\ysizet.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\washingMachine.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\yvals.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\w25x10.o</file>
+      <file>D:\tmp\arm\Common\src\stepmotor.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\ssp.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\uart.o</file>
+      <file>$TOOLKIT_DIR$\lib\dl6M_tl_in.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\timer32.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\WashingMachine.pbd</file>
+      <file>$PROJ_DIR$\Debug\Obj\lpc_control.pbi</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\Common\src\core_cm0.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 38</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 22 40 83 72 67 39 4 37</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22 40 83 72 39 4 37</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>D:\tmp\arm\Common\src\i2c.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 69</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 78</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 76 22 40 83 72 67 39 4 37 36 27 46 59</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 76 22 40 83 72 39 4 37 36 27 46 59</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Common\src\clkconfig.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 47</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 80</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 76 22 40 83 72 67 39 4 37 36 27 55</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 76 22 40 83 72 39 4 37 36 27 55</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>D:\tmp\arm\Common\src\cstartup_M.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 41</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Common\src\cstartup_M.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 41</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Common\src\adc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 23</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 76 22 40 83 72 67 39 4 37 36 27 24</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 76 22 40 83 72 39 4 37 36 27 24</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Common\src\gpio.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 65</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 43</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 76 22 40 83 72 67 39 4 37 36 27 57 46 35</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 76 22 40 83 72 39 4 37 36 27 57 46 35</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Common\src\i2c.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 69</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 78</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 76 22 40 83 72 67 39 4 37 36 27 46 59</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 76 22 40 83 72 39 4 37 36 27 46 59</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\ssp.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 70</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 86</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 76 22 40 83 72 67 39 4 37 36 27 57 48</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 76 22 40 83 72 39 4 37 36 27 57 48</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Common\src\system_LPC11xx.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 45</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 56</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 22 40 83 72 67 39 4 37 79 76 36 27</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22 40 83 72 39 4 37 79 76 36 27</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Common\src\timer32.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 6</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 89</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 76 22 40 83 72 67 39 4 37 36 27 75</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 76 22 40 83 72 39 4 37 36 27 75</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Common\src\uart.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 87</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 76 22 40 83 72 67 39 4 37 36 27 35</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 76 22 40 83 72 39 4 37 36 27 35</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\w25x10.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 84</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 77</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 76 22 40 83 72 67 39 4 37 36 27 46 48 57 35 50</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 76 22 40 83 72 39 4 37 36 27 46 48 57 35 50</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>D:\tmp\arm\Common\src\adc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 23</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 76 22 40 83 72 67 39 4 37 36 27 24</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 76 22 40 83 72 39 4 37 36 27 24</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\WashingMachine.out</name>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 20 23 47 38 41 65 69 64 29 70 17 45 6 87 84 19 3 88</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>D:\tmp\arm\Common\src\gpio.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 65</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 43</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 76 22 40 83 72 67 39 4 37 36 27 57 46 35</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 76 22 40 83 72 39 4 37 36 27 57 46 35</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>D:\tmp\arm\Common\src\clkconfig.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 47</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 80</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 76 22 40 83 72 67 39 4 37 36 27 55</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 76 22 40 83 72 39 4 37 36 27 55</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>D:\tmp\arm\Common\src\system_LPC11xx.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 45</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 56</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 22 40 83 72 67 39 4 37 79 76 36 27</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22 40 83 72 39 4 37 79 76 36 27</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>D:\tmp\arm\Common\src\timer32.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 6</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 89</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 76 22 40 83 72 67 39 4 37 36 27 75</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 76 22 40 83 72 39 4 37 36 27 75</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>D:\tmp\arm\Common\src\uart.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 87</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 76 22 40 83 72 67 39 4 37 36 27 35</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 76 22 40 83 72 39 4 37 36 27 35</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 26</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\lpc_control.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 64</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 91</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 74 40 83 72 67 39 4 37 81 61 58 79 76 22 36 27 35 57 75 59 50 48 24 46 44 16</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 74 40 83 72 39 4 37 81 61 58 79 76 22 36 27 35 57 75 59 50 48 24 46 44 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 29</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 76 22 40 83 72 67 39 4 37 36 27 35 57 75 59 50 24 16 44</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 76 22 40 83 72 39 4 37 36 27 35 57 75 59 50 24 16 44</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\stepmotor.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 76 22 40 83 72 67 39 4 37 36 27 44 57 75</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 76 22 40 83 72 39 4 37 36 27 44 57 75</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>D:\tmp\arm\Common\src\core_cm0.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 38</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 22 40 83 72 67 39 4 37</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22 40 83 72 39 4 37</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\washingMachine.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 62</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 82</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 74 40 83 72 67 39 4 37 81 61 58 79 76 22 36 27 35 57 75 59 50 48 24 46 44 66</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>D:\tmp\arm\Common\src\ssp.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 70</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 86</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 76 22 40 83 72 67 39 4 37 36 27 57 71</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 76 22 40 83 72 39 4 37 36 27 57 71</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>D:\tmp\arm\Common\src\stepmotor.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79 76 22 40 83 72 67 39 4 37 36 27 49 57 63</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79 76 22 40 83 72 39 4 37 36 27 49 57 63</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Obj\WashingMachine.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 30 80 42 43 78 91 60 86 21 56 89 18 77</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+
